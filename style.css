@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Satisfy&display=swap');
+
+/* ==========================================================================
+   DESIGN TOKENS & SYSTEM VARIABLES (AUTON Extraction: Near-Black + Single Green Accent)
+   ========================================================================== */
+:root {
+  /* Surface & Background Colors */
+  --color-bg-base: #0f0f10;
+  --color-bg-subtle: #141416;
+  --color-card-bg: rgba(255, 255, 255, 0.04);
+  --color-card-hover: rgba(255, 255, 255, 0.07);
+  --color-card-inner: rgba(255, 255, 255, 0.03);
+  
+  /* Borders */
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-medium: rgba(255, 255, 255, 0.16);
+  --color-border-accent: rgba(50, 215, 75, 0.4);
+  
+  /* Typography & Text */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.6);
+  --color-text-muted: rgba(255, 255, 255, 0.5);
+  
+  /* Brand Accent Tokens (AUTON: single green accent, used sparingly) */
+  --color-accent-primary: #32d74b;
+  --color-accent-hover: #28b83e;
+  --color-accent-violet: #32d74b;
+  --color-accent-emerald: #32d74b;
+  --color-accent-amber: #32d74b;
+  
+  /* Glow & Shadows */
+  --glow-accent: rgba(50, 215, 75, 0.12);
+  --shadow-bento: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-bento-hover: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(50, 215, 75, 0.18);
+
+  /* Radius Scale */
+  --radius-card-outer: 16px;
+  --radius-card-inner: 12px;
+  --radius-badge: 9999px;
+}
+
+/* ==========================================================================
+   BASE & RESET
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  line-height: 1.625;
+}
+
+/* Accessible Focus States */
+:focus-visible {
+  outline: 2px solid var(--color-accent-primary) !important;
+  outline-offset: 3px !important;
+}
+
+/* Selection Highlight */
+::selection {
+  background: rgba(50, 215, 75, 0.35);
+  color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f10;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2433;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3347;
+}
+
+/* ==========================================================================
+   FONT FAMILIES (AUTON: Bebas Neue display + Roboto body + Satisfy signature)
+   ========================================================================== */
+.font-heading {
+  font-family: 'Bebas Neue', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.font-archivo {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-handwriting {
+  font-family: 'Satisfy', cursive;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Eyebrow label style (AUTON: plain white, non-uppercase, Plus Jakarta Sans) */
+.eyebrow-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* ==========================================================================
+   BENTO GRID ARCHITECTURE (Auton + Apple-Style)
+   ========================================================================== */
+.bento-card {
+  position: relative;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-card-outer);
+  box-shadow: var(--shadow-bento);
+  transition: border-color .35s cubic-bezier(0.16, 1, 0.3, 1),
+              background .35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  border-color: var(--color-border-accent);
+  background: var(--color-card-hover);
+}
+
+/* Inner nested bento container */
+.bento-inner {
+  border-radius: var(--radius-card-inner);
+  background: var(--color-card-inner);
+  border: 1px solid var(--color-border-subtle);
+}
+
+/* ==========================================================================
+   AMBIENT GLOWS & LUXURY TEXTURES
+   ========================================================================== */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* ==========================================================================
+   WATERMARK NUMBERS (Auton Style)
+   ========================================================================== */
+.watermark-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 3.75rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  transition: color 0.35s ease, transform 0.35s ease;
+  user-select: none;
+}
+
+.bento-card:hover .watermark-num {
+  color: rgba(50, 215, 75, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   BROWSER MOCKUP HEADER
+   ========================================================================== */
+.browser-header {
+  height: 40px;
+  background: rgba(11, 13, 19, 0.95);
+  border-bottom: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 8px;
+}
+
+.browser-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.dot-close { background: rgba(239, 68, 68, 0.4); }
+.dot-min { background: rgba(234, 179, 8, 0.4); }
+.dot-max { background: rgba(34, 197, 94, 0.4); }
+
+.browser-header:hover .dot-close { background: #ef4444; }
+.browser-header:hover .dot-min { background: #eab308; }
+.browser-header:hover .dot-max { background: #22c55e; }
+
+/* ==========================================================================
+   READING SCROLL PROGRESS BAR
+   ========================================================================== */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #32d74b;
+  z-index: 100;
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
+
+/* ==========================================================================
+   ANIMATIONS & REVEALS
+   ========================================================================== */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced Motion Override (WCAG AAA Compliance) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .fade-in-up {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .bento-card:hover {
+    transform: none !important;
+  }
+}
+
+/* ==========================================================================
+   MODAL STYLES (Accessible Dialog)
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 5, 8, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #141416;
+  border: 1px solid var(--color-border-medium);
+  border-radius: 16px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(50, 215, 75, 0.12);
+  transform: scale(0.96) translateY(10px);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 480px;
+  width: 100%;
+}
+
+.modal-overlay.active .modal-content {
+  transform: scale(1) translateY(0);
+}
+
+/* ==========================================================================
+   BUTTON PRESS AFFORDANCE
+   ========================================================================== */
+.btn-press {
+  transition: transform 0.15s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-press:active {
+  transform: scale(0.97);
+}
