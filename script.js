@@ -201,6 +201,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // 6. Accessible CV Download Modal Dialog
   // =========================================================================
+  // Google Drive file IDs of the CV PDFs (the part after /file/d/ in the share URL). Each file must be shared as
+  // "Anyone with the link: Viewer". To update a CV, use Drive > Manage versions > Upload new version: the ID (and
+  // this link) stays the same. Deleting and re-uploading creates a new ID and breaks the link.
+  // While an ID is empty, its modal link keeps pointing to #contact.
+  const CV_FILE_IDS = {
+    en: '1W6DOnycemFFKnC8wXo_0BmqL_C3varu0',
+    pt: '1Sr7GEkvhb6o1vHQYuIYMcl1_j_f6vXlv',
+  };
+
+  document.querySelectorAll('[data-cv]').forEach(link => {
+    const id = CV_FILE_IDS[link.dataset.cv];
+    if (!id) return;
+    link.href = `https://drive.google.com/uc?export=download&id=${id}`;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+  });
+
   const cvModalTrigger = document.querySelectorAll('.open-cv-modal');
   const cvModal = document.getElementById('cv-modal');
   const closeCvModalBtn = document.getElementById('close-cv-modal');

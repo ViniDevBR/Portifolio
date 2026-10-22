@@ -55,7 +55,7 @@ A navegação é só a **dock inferior** (`.desktop-nav-link`, em todos os taman
 ## Placeholders que precisam de dado real
 
 - **Contato real já aplicado:** e-mail `vinideveloper386@gmail.com`, WhatsApp `+55 (19) 98310-0871` (`wa.me/5519983100871`; o DDI 55 foi presumido) e GitHub `github.com/ViniDevBR`. Estão hard-coded em `index.html` (cards de contato, link da seção Projects e modal de CV). O `og:url` ainda aponta para `viniciuscelestino-dev.vercel.app`.
-- **Modal de CV**: os dois links (EN/PT) apontam para `#contact`, não há PDFs no repo.
+- **CV (modal):** os links vêm de `CV_FILE_IDS` no bloco 6 do `script.js` (IDs de arquivos PDF no Google Drive, compartilhados como "Qualquer pessoa com o link"; o JS monta `drive.google.com/uc?export=download&id=ID` e abre em nova aba). **Para atualizar o CV: Drive > Gerenciar versões > Enviar nova versão** (mantém o ID); apagar e reenviar quebra o link. O `href="#contact"` do HTML é só fallback para ID vazio. Os dois arquivos baixam como "Vinicius Celestino.pdf" (renomeie no Drive para diferenciar PT/EN; o ID não muda).
 - As URLs dos 3 projetos demo (Home Book, BurgerBite, InVestor) estão hard-coded no HTML; confirme antes de publicar.
 - Os "previews" dos projetos são mockups em HTML/CSS (barra de browser + card), não screenshots.
 
