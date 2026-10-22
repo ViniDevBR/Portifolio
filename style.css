@@ -47,7 +47,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 6rem;
   background-color: var(--color-bg-base);
   color: var(--color-text-primary);
@@ -133,6 +132,8 @@ body {
   transition: border-color .35s cubic-bezier(0.16, 1, 0.3, 1),
               background .35s cubic-bezier(0.16, 1, 0.3, 1);
   overflow: hidden;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .bento-card:hover {
@@ -158,6 +159,9 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 999;
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 /* ==========================================================================
@@ -209,6 +213,26 @@ body {
 .browser-header:hover .dot-min { background: #eab308; }
 .browser-header:hover .dot-max { background: #22c55e; }
 
+/* Hide scrollbar on horizontally scrollable pills (mobile dock) */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ==========================================================================
+   PROJECT HIGHLIGHTS (native <details> disclosure)
+   ========================================================================== */
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details[open] .details-chevron {
+  transform: rotate(180deg);
+}
+
 /* ==========================================================================
    READING SCROLL PROGRESS BAR
    ========================================================================== */
@@ -216,11 +240,14 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   height: 3px;
   background: #32d74b;
   z-index: 100;
-  width: 0%;
-  transition: width 0.1s ease-out;
+  transform-origin: 0% 50%;
+  transform: scaleX(0);
+  will-change: transform;
+  pointer-events: none;
 }
 
 /* ==========================================================================
@@ -228,14 +255,16 @@ body {
    ========================================================================== */
 .fade-in-up {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(24px) translateZ(0);
+  will-change: opacity, transform;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fade-in-up.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) translateZ(0);
+  will-change: auto;
 }
 
 /* Reduced Motion Override (WCAG AAA Compliance) */
@@ -283,7 +312,6 @@ body {
   background: #141416;
   border: 1px solid var(--color-border-medium);
   border-radius: 16px;
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 30px rgba(50, 215, 75, 0.12);
   transform: scale(0.96) translateY(10px);
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   max-width: 480px;
@@ -303,4 +331,40 @@ body {
 
 .btn-press:active {
   transform: scale(0.97);
+}
+
+/* ==========================================================================
+   LANGUAGE SWITCH (EN | PT) — hero header and footer
+   ========================================================================== */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.lang-btn {
+  min-width: 44px;
+  min-height: 40px;
+  padding: 0 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lang-btn:hover {
+  color: #ffffff;
+}
+
+.lang-btn[aria-pressed="true"] {
+  background: #ffffff;
+  color: #0f0f10;
 }

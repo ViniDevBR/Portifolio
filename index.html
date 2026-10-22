@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark scroll-smooth">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vinicius Celestino — Fullstack Developer &amp; UI Engineer</title>
-  <meta name="description"
-    content="Engenheiro Fullstack especializado em React, Next.js, TypeScript, Vue.js, Design Systems, testes automatizados e arquitetura de software escalável." />
+  <title>Vinicius Celestino — Fullstack Developer</title>
+  <meta data-i18n-attr="content:meta.desc" name="description"
+    content="Fullstack Developer specialized in React, React Native, NextJS, TypeScript and NodeJS, with experience in software architecture, Clean Architecture, SOLID, automated testing and CI/CD." />
   <meta name="author" content="Vinicius Celestino" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Vinicius Celestino — Fullstack Developer & UI Engineer" />
-  <meta property="og:description"
-    content="Construindo experiências digitais escaláveis onde engenharia, performance e experiência do usuário se encontram. 4+ anos de experiência com React, Next.js, Vue.js e TypeScript." />
+  <meta property="og:title" content="Vinicius Celestino — Fullstack Developer" />
+  <meta data-i18n-attr="content:meta.ogDesc" property="og:description"
+    content="Fullstack Developer working across Web, Mobile and Backend, combining software engineering, architecture, performance and product vision." />
   <meta property="og:url" content="https://viniciuscelestino-dev.vercel.app" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,9 +57,9 @@
 <body
   class="bg-[#0f0f10] text-slate-100 antialiased relative min-h-screen overflow-x-hidden selection:bg-green-500/30 selection:text-white">
 
-  <a href="#main-content"
+  <a data-i18n="a11y.skip" href="#main-content"
     class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-5 focus:py-2.5 focus:bg-white focus:text-slate-950 focus:font-bold focus:rounded-xl focus:shadow-2xl focus:outline-none">
-    Pular para o conteúdo principal
+    Skip to main content
   </a>
 
   <!-- Reading Scroll Progress Bar -->
@@ -72,23 +72,29 @@
   <main id="main-content" class="relative z-10">
 
     <!-- ==================== HERO SECTION (AUTON REPLICA) ==================== -->
-    <section id="home" class="relative w-full min-h-screen flex flex-col justify-between overflow-hidden bg-[#0f0f10]"
-      aria-label="Apresentação Inicial">
+    <section data-i18n-attr="aria-label:aria.hero" id="home"
+      class="relative w-full min-h-screen flex flex-col justify-between overflow-hidden bg-[#0f0f10]"
+      aria-label="Introduction">
 
       <header
-        class="relative z-30 w-full max-w-7xl mx-auto px-6 sm:px-10 pt-6 sm:pt-8 flex items-center justify-between">
+        class="relative z-30 w-full max-w-7xl min-[1700px]:max-w-none mx-auto px-6 sm:px-10 min-[1700px]:px-16 pt-6 sm:pt-8 flex items-center justify-between">
         <a href="#home"
           class="w-11 h-11 rounded-full border border-white/20 bg-white/[0.04] backdrop-blur-md flex items-center justify-center text-sm font-bold font-heading text-white hover:border-white/40 hover:bg-white/[0.08] transition-all focus-visible:ring-2 focus-visible:ring-[#32d74b]"
           aria-label="Vinicius Celestino Home">
           VC
         </a>
+        <div class="lang-switch" role="group" aria-label="Language / Idioma">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
       </header>
 
-      <div
-        class="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden select-none z-0">
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden select-none z-0"
+        style="transform: translateZ(0); will-change: transform;">
         <div class="relative w-full h-full flex items-center justify-center">
-          <img src="assets/img/profile.jpg" alt="Vinicius Celestino - Front-End Developer & UI Engineer"
-            class="h-full w-auto max-w-none object-cover sm:object-contain object-top select-none pointer-events-none filter brightness-[0.96] contrast-[1.04]" />
+          <img src="assets/img/profile.jpg" alt="Vinicius Celestino - Fullstack Developer" loading="eager"
+            decoding="async"
+            class="h-full w-full object-cover object-top select-none pointer-events-none filter brightness-[0.96] contrast-[1.04]" />
 
           <div class="absolute inset-0 pointer-events-none"
             style="background: radial-gradient(ellipse 70% 60% at 50% 35%, transparent 35%, rgba(15,15,16,0.45) 68%, #0f0f10 96%), linear-gradient(to bottom, transparent 0%, transparent 48%, rgba(15,15,16,0.65) 72%, #0f0f10 98%);"
@@ -104,34 +110,25 @@
         </div>
       </div>
 
-      <div class="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-10 pb-12 sm:pb-20 pt-4">
-        <div class="flex flex-col md:grid md:grid-cols-3 items-center md:items-end gap-6 md:gap-4">
+      <div
+        class="relative z-20 w-full max-w-7xl min-[1700px]:max-w-none mx-auto px-6 sm:px-10 min-[1700px]:px-16 pb-28 sm:pb-24 min-[1700px]:pb-10 pt-4">
+        <div class="flex items-end justify-between gap-4">
 
-          <div class="w-full md:w-auto flex items-end justify-between md:justify-start gap-4">
-            <div class="space-y-2.5">
-              <p class="text-white font-medium text-base sm:text-lg lg:text-xl leading-snug">
-                Fullstack Developer
-              </p>
-              <p class="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-white">
-                Vinicius Celestino
-              </p>
-            </div>
-
-            <div
-              class="flex md:hidden flex-col items-end leading-[0.82] font-heading font-extrabold select-none shrink-0"
-              aria-hidden="true">
-              <span class="text-5xl text-white current-year-century">20</span>
-              <span class="text-5xl text-white/30 current-year-suffix">26</span>
-            </div>
+          <div class="min-w-0 space-y-2.5">
+            <p class="text-white font-medium text-base sm:text-lg lg:text-xl leading-snug">
+              Fullstack Developer | React Native • React • Node
+            </p>
+            <p class="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-white">
+              Vinicius Celestino
+            </p>
           </div>
 
-          <div class="hidden md:block h-12" aria-hidden="true"></div>
-
-          <div class="hidden md:flex flex-col items-end leading-[0.82] font-heading font-extrabold select-none"
+          <div class="flex flex-col items-end leading-[0.82] font-heading font-extrabold select-none shrink-0"
             aria-hidden="true">
-            <span id="current-year-century" class="text-7xl lg:text-8xl xl:text-9xl tracking-tight text-white">20</span>
-            <span id="current-year-suffix"
-              class="text-7xl lg:text-8xl xl:text-9xl tracking-tight text-white/30">26</span>
+            <span
+              class="current-year-century text-5xl md:text-7xl lg:text-[length:min(4.5rem,10vh)] xl:text-[length:min(6rem,10vh)] tracking-tight text-white">20</span>
+            <span
+              class="current-year-suffix text-5xl md:text-7xl lg:text-[length:min(4.5rem,10vh)] xl:text-[length:min(6rem,10vh)] tracking-tight text-white/30">26</span>
           </div>
 
         </div>
@@ -139,42 +136,44 @@
     </section>
 
     <!-- ==================== FIXED FLOATING BOTTOM DOCK NAVIGATION ==================== -->
-    <aside
+    <aside data-i18n-attr="aria-label:aria.dock"
       class="fixed bottom-5 sm:bottom-6 left-1/2 -translate-x-1/2 z-50 max-w-[calc(100vw-1.5rem)] pointer-events-auto"
-      aria-label="Navegação Flutuante">
-      <nav
-        class="inline-flex items-center gap-1 sm:gap-1.5 bg-[#18191d]/50 backdrop-blur-md border border-white/10 rounded-full px-2.5 sm:px-4 h-12"
-        aria-label="Navegação Principal">
-        <a href="#about"
-          class="desktop-nav-link px-2.5 sm:px-4 py-1.5 text-xs sm:text-sm text-slate-300 hover:text-white rounded-full transition-all duration-200">About</a>
-        <a href="#services"
-          class="desktop-nav-link px-2.5 sm:px-4 py-1.5 text-xs sm:text-sm text-slate-300 hover:text-white rounded-full transition-all duration-200">Services</a>
-        <a href="#projects"
-          class="desktop-nav-link px-2.5 sm:px-4 py-1.5 text-xs sm:text-sm text-slate-300 hover:text-white rounded-full transition-all duration-200">Project</a>
-        <a href="#contact"
-          class="desktop-nav-link px-2.5 sm:px-4 py-1.5 text-xs sm:text-sm text-slate-300 hover:text-white rounded-full transition-all duration-200">Contact</a>
+      aria-label="Floating navigation">
+      <nav data-i18n-attr="aria-label:aria.nav"
+        class="no-scrollbar max-w-full overflow-x-auto inline-flex items-center gap-1 sm:gap-2 bg-white/10 backdrop-blur-[30px] backdrop-saturate-150 border border-white/20 rounded-full p-1.5 sm:px-3 sm:py-2 shadow-[0_12px_40px_rgba(0,0,0,0.6)] whitespace-nowrap select-none"
+        aria-label="Main navigation">
+        <a data-i18n="nav.about" href="#about"
+          class="desktop-nav-link px-2 sm:px-3.5 py-1.5 text-[11px] sm:text-sm text-slate-300 hover:text-white rounded-full transition-all duration-200 shrink-0 font-medium">About</a>
+        <a data-i18n="nav.services" href="#services"
+          class="desktop-nav-link px-2 sm:px-3.5 py-1.5 text-[11px] sm:text-sm text-slate-300 hover:text-white rounded-full transition-all duration-200 shrink-0 font-medium">Services</a>
+        <a data-i18n="nav.projects" href="#projects"
+          class="desktop-nav-link px-2 sm:px-3.5 py-1.5 text-[11px] sm:text-sm text-slate-300 hover:text-white rounded-full transition-all duration-200 shrink-0 font-medium">Projects</a>
+        <a href="#skills"
+          class="desktop-nav-link px-2 sm:px-3.5 py-1.5 text-[11px] sm:text-sm text-slate-300 hover:text-white rounded-full transition-all duration-200 shrink-0 font-medium">Skills</a>
+        <a data-i18n="nav.contact" href="#contact"
+          class="desktop-nav-link px-2 sm:px-3.5 py-1.5 text-[11px] sm:text-sm text-slate-300 hover:text-white rounded-full transition-all duration-200 shrink-0 font-medium">Contact</a>
 
-        <button type="button"
-          class="open-cv-modal btn-press ml-1 inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 text-[11px] sm:text-xs md:text-sm font-semibold tracking-wide text-white bg-white/15 hover:bg-white/25 rounded-full transition-all duration-200 focus-visible:ring-2 focus-visible:ring-white">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24"
+        <button data-i18n-attr="aria-label:aria.download" type="button"
+          class="open-cv-modal btn-press ml-0.5 sm:ml-1 inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-semibold text-white bg-white/15 hover:bg-white/25 rounded-full transition-all duration-200 shrink-0 whitespace-nowrap focus-visible:ring-2 focus-visible:ring-white"
+          aria-label="Download CV">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" stroke-width="2.5" aria-hidden="true" class="shrink-0">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
           </svg>
-          <span>DOWNLOAD CV</span>
+          <span><span data-i18n="nav.downloadPrefix" class="hidden sm:inline">Download </span>CV</span>
         </button>
       </nav>
     </aside>
 
     <!-- ==================== QUICK STATS STRIP ==================== -->
-    <section class="max-w-7xl mx-auto px-6 py-10" aria-label="Indicadores Rápidos">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <section data-i18n-attr="aria-label:aria.stats" class="max-w-7xl mx-auto px-6 py-10" aria-label="Quick indicators">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <!-- Metric Card 1: Experience -->
-        <div class="bento-card p-6 flex items-center justify-between fade-in-up">
+        <div class="bento-card p-6 flex items-center justify-between gap-4 fade-in-up">
           <div>
             <div class="text-4xl font-extrabold font-heading text-white">4+</div>
-            <div class="text-sm font-medium text-slate-400 mt-1">Years Experience</div>
+            <div data-i18n="stat.years" class="text-sm font-medium text-slate-400 mt-1">Years Experience</div>
           </div>
           <div
             class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0"
@@ -187,11 +186,28 @@
           </div>
         </div>
 
-        <!-- Metric Card 2: Core Stack -->
-        <div class="bento-card  p-6 flex items-center justify-between fade-in-up">
+        <div class="bento-card p-6 flex items-center justify-between gap-4 fade-in-up">
           <div>
-            <div class="text-2xl font-bold font-heading text-white">React / Next.js</div>
-            <div class="text-sm font-medium text-slate-400 mt-1">Core Ecosystem</div>
+            <div class="text-4xl font-extrabold font-heading text-white">9</div>
+            <div data-i18n="stat.apps" class="text-sm font-medium text-slate-400 mt-1">Published Apps</div>
+            <div data-i18n="stat.appsNote" class="text-[11px] text-slate-500 mt-1">Live in the stores, still with active
+              users</div>
+          </div>
+          <div
+            class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0"
+            aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 flex items-center justify-between gap-4 fade-in-up">
+          <div>
+            <div class="text-xl font-bold font-heading text-white">React / React Native</div>
+            <div data-i18n="stat.ecosystem" class="text-sm font-medium text-slate-400 mt-1">Core Ecosystem</div>
           </div>
           <div
             class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0"
@@ -203,11 +219,10 @@
           </div>
         </div>
 
-        <!-- Metric Card 3: International / Languages -->
-        <div class="bento-card  p-6 flex items-center justify-between fade-in-up">
+        <div class="bento-card p-6 flex items-center justify-between gap-4 fade-in-up">
           <div>
-            <div class="text-3xl font-extrabold font-heading text-white">PT / EN</div>
-            <div class="text-sm font-medium text-slate-400 mt-1">Working Languages</div>
+            <div class="text-3xl font-extrabold font-heading text-white">NodeJS</div>
+            <div data-i18n="stat.backend" class="text-sm font-medium text-slate-400 mt-1">Strong Backend</div>
           </div>
           <div
             class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white shrink-0"
@@ -215,7 +230,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
             </svg>
           </div>
         </div>
@@ -224,26 +239,91 @@
     </section>
 
     <!-- ==================== ABOUT ME SECTION ==================== -->
-    <section id="about" class="max-w-7xl mx-auto px-6 py-20" aria-label="Sobre o Desenvolvedor">
+    <section data-i18n-attr="aria-label:aria.about" id="about" class="max-w-7xl mx-auto px-6 py-20"
+      aria-label="About the developer">
 
       <!-- Section Header -->
       <div class="max-w-3xl mb-12 fade-in-up">
-        <p class="eyebrow-label mb-2">ABOUT ME</p>
-        <h2 class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight leading-tight">
-          Crafting Digital Experiences with Engineering and Precision
+        <p data-i18n="about.eyebrow" class="eyebrow-label mb-2">ABOUT ME</p>
+        <h2 data-i18n="about.title"
+          class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight leading-tight">
+          Building Products with Engineering, Architecture and Purpose
         </h2>
-        <p class="text-slate-300 text-base sm:text-lg mt-5 leading-relaxed">
-          I'm a Front-End Developer with over 4 years of experience building modern, scalable and responsive web
-          applications. My work goes beyond visual implementation: I seek to understand the product, business rules,
-          architecture, performance and user experience to transform problems into well-structured digital solutions.
-        </p>
+        <div class="mt-5 space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed">
+          <p data-i18n="about.p1">
+            I'm a Fullstack Developer with 4+ years of experience building web and mobile applications and APIs. I work
+            from understanding business needs and defining the technical solution through implementation, testing and
+            production delivery, with a focus on scalable architecture, security and code quality.
+          </p>
+          <p data-i18n="about.p2">
+            My strongest backend ecosystem today is NodeJS, especially with TypeScript and NestJS; on the client side, I
+            work extensively with React, React Native, NextJS and Expo. I have experience with layered architecture,
+            Clean Architecture, SOLID, database integration and GraphQL, REST APIs, CI/CD, test automation, Redis
+            caching and RabbitMQ messaging. I also work with C#/.NET and Python/FastAPI on backend features, and I have
+            experience with mobile applications featuring offline-first, OTA updates and feature flags.
+          </p>
+          <p data-i18n="about.p3">
+            My work includes software architecture and technical leadership: I lead the design of solutions from
+            requirements gathering to the technical documentation for front-end, back-end and mobile, for discussion and
+            validation with the team before development. I define API contracts, entities, interfaces, business rules
+            and forms, screen responsibilities, and state management and persistence strategies, aligning technical
+            decisions with product and business needs together with the team.
+          </p>
+          <p data-i18n="about.p4">
+            Throughout my career, I've worked on ERP systems, financial products and mobile applications, including
+            products published to the App Store and Google Play.
+          </p>
+        </div>
       </div>
 
-      <!-- 3 Pillars Bento Grid (Auton Style) -->
+      <!-- Journey Timeline -->
+      <div class="bento-card p-8 mb-6 fade-in-up">
+        <h3 data-i18n="journey.title" class="text-xl font-bold font-heading text-white mb-8">My journey</h3>
+        <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <li class="relative pt-6 border-t border-white/10">
+            <span class="absolute -top-[5px] left-0 w-2.5 h-2.5 rounded-full bg-green-400" aria-hidden="true"></span>
+            <div class="text-3xl font-heading text-white mb-2">2015</div>
+            <p data-i18n="journey.2015" class="text-slate-400 text-sm leading-relaxed">
+              First contact with programming logic and languages such as C, C++, C# and Ladder. In my final course
+              project, I worked directly on PLC/PIC programming using Ladder.
+            </p>
+          </li>
+          <li class="relative pt-6 border-t border-white/10">
+            <span class="absolute -top-[5px] left-0 w-2.5 h-2.5 rounded-full bg-green-400" aria-hidden="true"></span>
+            <div class="text-3xl font-heading text-white mb-2">2021</div>
+            <p data-i18n="journey.2021" class="text-slate-400 text-sm leading-relaxed">
+              First contact with HTML and CSS through Rocketseat. I volunteered with the Sou Junior project.
+            </p>
+          </li>
+          <li class="relative pt-6 border-t border-white/10">
+            <span class="absolute -top-[5px] left-0 w-2.5 h-2.5 rounded-full bg-green-400" aria-hidden="true"></span>
+            <div class="text-3xl font-heading text-white mb-2">2022</div>
+            <p data-i18n="journey.2022" class="text-slate-400 text-sm leading-relaxed">
+              Through a referral from the Sou Junior project, I got my first professional opportunity in software
+              development, working on ERP Suporte.
+            </p>
+          </li>
+          <li class="relative pt-6 border-t border-white/10">
+            <span class="absolute -top-[5px] left-0 w-2.5 h-2.5 rounded-full bg-green-400" aria-hidden="true"></span>
+            <div class="text-3xl font-heading text-white mb-2">2023</div>
+            <p data-i18n="journey.2023" class="text-slate-400 text-sm leading-relaxed">
+              Started my Software Engineering degree at Wyden.
+            </p>
+          </li>
+          <li class="relative pt-6 border-t border-white/10">
+            <span class="absolute -top-[5px] left-0 w-2.5 h-2.5 rounded-full bg-green-400" aria-hidden="true"></span>
+            <div class="text-3xl font-heading text-white mb-2">2026</div>
+            <p data-i18n="journey.2026" class="text-slate-400 text-sm leading-relaxed">
+              Software Engineering degree completed.
+            </p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- 3 Pillars Bento Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        <!-- Pillar 1: Front-End Engineering -->
-        <div class="bento-card  p-8 group fade-in-up">
+        <div class="bento-card p-8 group fade-in-up">
           <div
             class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
             aria-hidden="true">
@@ -252,33 +332,15 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold font-heading text-white mb-3">Front-End Engineering</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">
-            React, Next.js, Vue.js, TypeScript, state architecture, Core Web Vitals performance and highly scalable,
-            resilient interfaces.
+          <h3 data-i18n="pillar.fullstack.t" class="text-xl font-bold font-heading text-white mb-3">Fullstack
+            Engineering</h3>
+          <p data-i18n="pillar.fullstack.d" class="text-slate-400 text-sm leading-relaxed">
+            Development of Web, Mobile and Backend applications, working from the frontend to the API and business
+            rules.
           </p>
         </div>
 
-        <!-- Pillar 2: UI / UX Engineering -->
-        <div class="bento-card  p-8 group fade-in-up">
-          <div
-            class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
-            aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold font-heading text-white mb-3">UI / UX Engineering</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">
-            Responsive interfaces, corporate Design Systems, strict WCAG accessibility, design tokens and polished
-            micro-interactions.
-          </p>
-        </div>
-
-        <!-- Pillar 3: Software Architecture -->
-        <div class="bento-card  p-8 group fade-in-up">
+        <div class="bento-card p-8 group fade-in-up">
           <div
             class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
             aria-hidden="true">
@@ -288,10 +350,29 @@
                 d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
             </svg>
           </div>
-          <h3 class="text-xl font-bold font-heading text-white mb-3">Software Architecture</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">
-            Componentization patterns, Micro Frontends, clean code, automated testing pipelines, SOLID principles and
-            maintainability.
+          <h3 data-i18n="common.softwareArchitecture" class="text-xl font-bold font-heading text-white mb-3">Software
+            Architecture</h3>
+          <p data-i18n="pillar.arch.d" class="text-slate-400 text-sm leading-relaxed">
+            Clean Architecture, SOLID, separation of concerns, modularity, design patterns and technical decisions
+            guided by context.
+          </p>
+        </div>
+
+        <div class="bento-card p-8 group fade-in-up">
+          <div
+            class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
+            aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 data-i18n="pillar.lead.t" class="text-xl font-bold font-heading text-white mb-3">Product &amp; Technical
+            Leadership</h3>
+          <p data-i18n="pillar.lead.d" class="text-slate-400 text-sm leading-relaxed">
+            I turn business needs into requirements, contracts, technical rules and implementable solutions, and lead
+            technical decisions and processes when needed.
           </p>
         </div>
 
@@ -300,16 +381,17 @@
     </section>
 
     <!-- ==================== SERVICES SECTION (WATERMARK BENTO) ==================== -->
-    <section id="services" class="max-w-7xl mx-auto px-6 py-20" aria-label="Serviços Prestados">
+    <section data-i18n-attr="aria-label:aria.services" id="services" class="max-w-7xl mx-auto px-6 py-20"
+      aria-label="Services offered">
 
-      <!-- Section Header -->
       <div class="max-w-3xl mb-14 fade-in-up">
-        <p class="eyebrow-label mb-2">SERVICES</p>
-        <h2 class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight">
-          What I Do &amp; Deliver
+        <p data-i18n="svc.eyebrow" class="eyebrow-label mb-2">SERVICES</p>
+        <h2 data-i18n="svc.title"
+          class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight leading-tight">
+          What I Build &amp; Deliver
         </h2>
-        <p class="text-slate-400 text-base sm:text-lg mt-3">
-          Specialized solutions focused on performance, business conversion and clean code.
+        <p data-i18n="svc.sub" class="text-slate-400 text-base sm:text-lg mt-3">
+          Software products designed for maintainability, scalability, performance and real business needs.
         </p>
       </div>
 
@@ -317,7 +399,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <!-- 01 -->
-        <div class="bento-card  p-7 group fade-in-up">
+        <div class="bento-card p-7 group fade-in-up">
           <span class="watermark-num" aria-hidden="true">01</span>
           <div
             class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform"
@@ -328,31 +410,33 @@
                 d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold font-heading text-white mb-2">Web Applications</h3>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Modern, scalable and maintainable web applications built with modern Front-End engineering standards.
+          <h3 data-i18n="svc.web.t" class="text-lg font-bold font-heading text-white mb-2">Web Applications</h3>
+          <p data-i18n="svc.web.d" class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Modern applications with React, NextJS and TypeScript, focused on experience, architecture and
+            maintainability.
           </p>
         </div>
 
         <!-- 02 -->
-        <div class="bento-card  p-7 group fade-in-up">
+        <div class="bento-card p-7 group fade-in-up">
           <span class="watermark-num" aria-hidden="true">02</span>
           <div
             class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform"
             aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold font-heading text-white mb-2">E-commerce Dev</h3>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Fast, secure digital commerce platforms with integrations for product catalogs, auth and seamless checkout.
+          <h3 data-i18n="svc.mobile.t" class="text-lg font-bold font-heading text-white mb-2">Mobile Applications</h3>
+          <p data-i18n="svc.mobile.d" class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            React Native and Expo apps ready for production and publishing on the App Store and Google Play.
           </p>
         </div>
 
         <!-- 03 -->
-        <div class="bento-card  p-7 group fade-in-up">
+        <div class="bento-card p-7 group fade-in-up">
           <span class="watermark-num" aria-hidden="true">03</span>
           <div
             class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform"
@@ -360,35 +444,36 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold font-heading text-white mb-2">API Integration</h3>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Integration with REST and GraphQL APIs, JWT/OAuth authentication systems and external cloud microservices.
+          <h3 class="text-lg font-bold font-heading text-white mb-2">Backend &amp; APIs</h3>
+          <p data-i18n="svc.backend.d" class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Backend APIs and services with NodeJS, TypeScript and NestJS, integrated with databases, authentication and
+            business rules.
           </p>
         </div>
 
         <!-- 04 -->
-        <div class="bento-card  p-7 group fade-in-up">
+        <div class="bento-card p-7 group fade-in-up">
           <span class="watermark-num" aria-hidden="true">04</span>
           <div
             class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform"
             aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold font-heading text-white mb-2">User Interfaces</h3>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Responsive, accessible and intuitive interfaces focused on usability, aesthetic polish and UI consistency.
+          <h3 data-i18n="svc.fullstack.t" class="text-lg font-bold font-heading text-white mb-2">Fullstack Development
+          </h3>
+          <p data-i18n="svc.fullstack.d" class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            End-to-end development, connecting interface, state, APIs, persistence and business rules.
           </p>
         </div>
 
         <!-- 05 -->
-        <div class="bento-card  p-7 group fade-in-up">
+        <div class="bento-card p-7 group fade-in-up">
           <span class="watermark-num" aria-hidden="true">05</span>
           <div
             class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform"
@@ -399,14 +484,15 @@
                 d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold font-heading text-white mb-2">Architecture</h3>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Scalable component structures, Design Systems, state management and decoupled Micro Frontends.
+          <h3 data-i18n="common.softwareArchitecture" class="text-lg font-bold font-heading text-white mb-2">Software
+            Architecture</h3>
+          <p data-i18n="svc.arch.d" class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Structuring and evolving projects with Clean Architecture, SOLID, modularity and separation of concerns.
           </p>
         </div>
 
         <!-- 06 -->
-        <div class="bento-card  p-7 group fade-in-up">
+        <div class="bento-card p-7 group fade-in-up">
           <span class="watermark-num" aria-hidden="true">06</span>
           <div
             class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform"
@@ -416,33 +502,15 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h3 class="text-lg font-bold font-heading text-white mb-2">Automated Testing</h3>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Reliable applications using unit, integration and end-to-end tests: Jest, React Testing Library, Cypress,
-            Playwright.
+          <h3 data-i18n="svc.testing.t" class="text-lg font-bold font-heading text-white mb-2">Automated Testing</h3>
+          <p data-i18n="svc.testing.d" class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Unit, integration and E2E tests with Jest, Testing Library and Detox, according to the product's needs.
           </p>
         </div>
 
         <!-- 07 -->
-        <div class="bento-card  p-7 group fade-in-up">
+        <div class="bento-card p-7 group fade-in-up">
           <span class="watermark-num" aria-hidden="true">07</span>
-          <div
-            class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform"
-            aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-bold font-heading text-white mb-2">Web Performance</h3>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Performance improvements focused on Core Web Vitals (LCP, INP, CLS), rendering cycles and asset delivery.
-          </p>
-        </div>
-
-        <!-- 08 -->
-        <div class="bento-card  p-7 group fade-in-up">
-          <span class="watermark-num" aria-hidden="true">08</span>
           <div
             class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform"
             aria-hidden="true">
@@ -453,9 +521,27 @@
             </svg>
           </div>
           <h3 class="text-lg font-bold font-heading text-white mb-2">CI/CD &amp; Delivery</h3>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-            Automated workflows, Docker containers and modern deployment processes for continuous, reliable software
-            shipping.
+          <p data-i18n="svc.cicd.d" class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Pipelines and automation for build, tests, publishing and continuous delivery, including EAS Workflows,
+            GitHub Actions and OTA Updates.
+          </p>
+        </div>
+
+        <!-- 08 -->
+        <div class="bento-card p-7 group fade-in-up">
+          <span class="watermark-num" aria-hidden="true">08</span>
+          <div
+            class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform"
+            aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 data-i18n="svc.lead.t" class="text-lg font-bold font-heading text-white mb-2">Technical Leadership</h3>
+          <p data-i18n="svc.lead.d" class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Sprint organization, Kanban, PO meetings, code review, PR approval and technical quality follow-up.
           </p>
         </div>
 
@@ -464,23 +550,25 @@
     </section>
 
     <!-- ==================== PROJECTS SECTION (WITH CATEGORY TABS) ==================== -->
-    <section id="projects" class="max-w-7xl mx-auto px-6 py-20" aria-label="Projetos Selecionados">
+    <section data-i18n-attr="aria-label:aria.projects" id="projects" class="max-w-7xl mx-auto px-6 py-20"
+      aria-label="Selected projects">
 
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6 fade-in-up">
         <div>
-          <p class="eyebrow-label mb-2">PORTFOLIO</p>
-          <h2 class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight">
+          <p data-i18n="proj.eyebrow" class="eyebrow-label mb-2">PORTFOLIO</p>
+          <h2 data-i18n="proj.title" class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight">
             Featured Projects
           </h2>
-          <p class="text-slate-400 text-base sm:text-lg mt-3">
-            Real-world applications with live demos, clean engineering and business impact.
+          <p data-i18n="proj.sub" class="text-slate-400 text-base sm:text-lg mt-3">
+            Projects that represent my experience in software architecture, Fullstack development, Mobile and product
+            delivery.
           </p>
         </div>
 
-        <a href="https://github.com/viniciuscelestino" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/ViniDevBR" target="_blank" rel="noopener noreferrer"
           class="btn-press inline-flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-green-400 transition-colors focus-visible:ring-2 focus-visible:ring-green-400 p-1">
-          <span>View all on GitHub</span>
+          <span data-i18n="proj.viewAll">View all on GitHub</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -489,31 +577,311 @@
         </a>
       </div>
 
-      <!-- Filter Tabs (UI/UX Pro Max Pattern) -->
+      <!-- Filter Tabs (UI/UX Pro Max Pattern) — DISABLED, kept for future reuse. script.js (block 5) is null-safe.
       <div class="flex flex-wrap items-center gap-2.5 mb-10 fade-in-up" role="tablist" aria-label="Filtro de Projetos">
         <button type="button" role="tab" aria-selected="true" data-filter="all"
           class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-white bg-white text-slate-950 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-green-400">
           All Projects
         </button>
-        <button type="button" role="tab" aria-selected="false" data-filter="elearning"
+        <button type="button" role="tab" aria-selected="false" data-filter="web"
           class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:border-white/20 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-green-400">
-          E-Learning
+          Web
         </button>
-        <button type="button" role="tab" aria-selected="false" data-filter="ecommerce"
+        <button type="button" role="tab" aria-selected="false" data-filter="mobile"
           class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:border-white/20 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-green-400">
-          Gastronomy &amp; Retail
+          Mobile
         </button>
         <button type="button" role="tab" aria-selected="false" data-filter="fintech"
           class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:border-white/20 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-green-400">
-          FinTech &amp; Dashboards
+          FinTech
+        </button>
+        <button type="button" role="tab" aria-selected="false" data-filter="erp"
+          class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:border-white/20 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-green-400">
+          ERP
+        </button>
+        <button type="button" role="tab" aria-selected="false" data-filter="ecommerce"
+          class="project-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:border-white/20 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-green-400">
+          E-commerce
         </button>
       </div>
+      -->
 
-      <!-- Projects Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Projects Grid: professional projects first (wider), public demos as support -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
 
-        <!-- Project 1: Home Book -->
-        <article class="project-item bento-card group flex flex-col h-full fade-in-up" data-category="elearning webapp">
+        <!-- Project: IntraPay (professional) -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-3"
+          data-category="fintech mobile web">
+
+          <div class="browser-header">
+            <span class="browser-dot dot-close" aria-hidden="true"></span>
+            <span class="browser-dot dot-min" aria-hidden="true"></span>
+            <span class="browser-dot dot-max" aria-hidden="true"></span>
+            <span data-i18n="proj.professional" class="ml-2 text-[11px] font-mono text-slate-500 truncate">Professional
+              project</span>
+          </div>
+
+          <div
+            class="relative aspect-[16/7] bg-[#0f121a] overflow-hidden border-b border-white/5 flex items-center justify-center p-6">
+            <div
+              class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
+              <div class="flex items-center justify-between">
+                <span data-i18n="proj.intrapay.tag" class="text-xs font-mono font-semibold text-white/70">Digital
+                  bank</span>
+                <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
+              </div>
+              <div class="text-center">
+                <span class="text-3xl font-bold font-heading text-white">IntraPay</span>
+              </div>
+              <div class="flex gap-2">
+                <div class="h-2 w-1/2 bg-white/20 rounded"></div>
+                <div class="h-2 w-1/2 bg-white/10 rounded"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col gap-5">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
+                  IntraPay
+                </h3>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider border border-green-400/40 text-green-400 bg-green-400/10">Fullstack
+                  / Software Architect</span>
+              </div>
+              <p data-i18n="proj.intrapay.d" class="text-slate-400 text-sm leading-relaxed">
+                Digital bank built with a mobile-first approach, scalable architecture and a focus on security, quality
+                and user experience.
+              </p>
+            </div>
+
+            <dl class="space-y-4 text-sm">
+              <div>
+                <dt class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</dt>
+                <dd class="flex flex-wrap gap-2">
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React
+                    Native</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NestJS</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#/.NET</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Firebase</span>
+                </dd>
+              </div>
+              <div>
+                <dt data-i18n="common.architecture"
+                  class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Architecture</dt>
+                <dd class="flex flex-wrap gap-2">
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Clean
+                    Architecture</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SOLID</span>
+                </dd>
+              </div>
+              <div>
+                <dt class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Backend</dt>
+                <dd data-i18n="proj.backendNote" class="text-slate-300">C#/.NET organized in four responsibility layers
+                  by the team.</dd>
+              </div>
+            </dl>
+
+            <details class="project-details mt-auto pt-4 border-t border-white/5">
+              <summary
+                class="flex items-center justify-between cursor-pointer list-none text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
+                <span data-i18n="proj.hl12">Highlights (12)</span>
+                <svg class="details-chevron transition-transform duration-200" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <ul class="mt-4 space-y-2.5">
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h1">Involved from the first conversation with the client through to
+                    publishing the product on the stores.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h2">Requirements gathering, approval documentation and technical
+                    definition.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h3">Technical documentation with Figma screens, backend routes,
+                    TypeScript interfaces, business rules and interface RBAC.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h4">Definition of the UI library, state management and project
+                    architecture.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h5">Leadership of a team of freelance developers.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h6">Sprint organization, Kanban, weekly PO meetings, code reviews and
+                    PR approval.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h7">Implementation of AES and biometrics / Face ID features focused on
+                    app security.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h8">CI/CD with EAS Workflows and GitHub Actions.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span>OTA Updates.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span>Firebase.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h11">Jest, React Testing Library and Detox.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.intrapay.h12">Unit, integration and E2E tests, also run in CI.</span>
+                </li>
+              </ul>
+            </details>
+          </div>
+
+        </article>
+
+        <!-- Project: Growzone (professional) -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-3"
+          data-category="mobile web">
+
+          <div class="browser-header">
+            <span class="browser-dot dot-close" aria-hidden="true"></span>
+            <span class="browser-dot dot-min" aria-hidden="true"></span>
+            <span class="browser-dot dot-max" aria-hidden="true"></span>
+            <span data-i18n="proj.professional" class="ml-2 text-[11px] font-mono text-slate-500 truncate">Professional
+              project</span>
+          </div>
+
+          <div
+            class="relative aspect-[16/7] bg-[#0f121a] overflow-hidden border-b border-white/5 flex items-center justify-center p-6">
+            <div
+              class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
+              <div class="flex items-center justify-between">
+                <span data-i18n="proj.growzone.tag" class="text-xs font-mono font-semibold text-white/70">Application
+                  modernization</span>
+                <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
+              </div>
+              <div class="text-center">
+                <span class="text-3xl font-bold font-heading text-white">Growzone</span>
+              </div>
+              <div class="flex gap-2">
+                <div class="h-2 w-1/2 bg-white/20 rounded"></div>
+                <div class="h-2 w-1/2 bg-white/10 rounded"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col gap-5">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
+                  Growzone
+                </h3>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider border border-green-400/40 text-green-400 bg-green-400/10">Fullstack
+                  / Software Architect</span>
+              </div>
+              <p data-i18n="proj.growzone.d" class="text-slate-400 text-sm leading-relaxed">
+                Evolution and restructuring of an existing application, focused on modernization, architectural
+                organization, reliability and continuity of development.
+              </p>
+            </div>
+
+            <dl class="space-y-4 text-sm">
+              <div>
+                <dt class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</dt>
+                <dd class="flex flex-wrap gap-2">
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React
+                    Native</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#/.NET</span>
+                </dd>
+              </div>
+              <div>
+                <dt class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Backend</dt>
+                <dd data-i18n="proj.backendNote" class="text-slate-300">C#/.NET organized in four responsibility layers
+                  by the team.</dd>
+              </div>
+            </dl>
+
+            <details class="project-details mt-auto pt-4 border-t border-white/5">
+              <summary
+                class="flex items-center justify-between cursor-pointer list-none text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
+                <span data-i18n="proj.hl7">Highlights (7)</span>
+                <svg class="details-chevron transition-transform duration-200" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <ul class="mt-4 space-y-2.5">
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.growzone.h1">Refactoring of an old, disorganized codebase.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.growzone.h2">Upgrade to a more recent version of React Native.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.growzone.h3">Restructuring of the project organization and separation of
+                    responsibilities.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.growzone.h4">Application of SOLID principles.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.growzone.h5">Implementation of CI/CD and OTA Updates.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.growzone.h6">Creation of tests in a codebase that previously lacked enough test
+                    coverage to support the refactoring.</span>
+                </li>
+                <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
+                  <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
+                  <span data-i18n="proj.growzone.h7">Also involved in the technical definition and organization of the
+                    solution together with product.</span>
+                </li>
+              </ul>
+            </details>
+          </div>
+
+        </article>
+
+        <!-- Project: Home Book -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-2"
+          data-category="elearning webapp">
 
           <!-- Browser Mockup Bar -->
           <div class="browser-header">
@@ -530,12 +898,14 @@
             <div
               class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-mono font-semibold text-white/70">E-Learning Platform</span>
+                <span data-i18n="proj.elearning.tag" class="text-xs font-mono font-semibold text-white/70">E-Learning
+                  Platform</span>
                 <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
               </div>
               <div class="text-center">
                 <span class="text-2xl font-bold font-heading text-white">Home Book</span>
-                <p class="text-xs text-slate-400 mt-1">Interactive Education Ecosystem</p>
+                <p data-i18n="proj.elearning.sub" class="text-xs text-slate-400 mt-1">Interactive Education Ecosystem
+                </p>
               </div>
               <div class="flex gap-2">
                 <div class="h-2 w-1/3 bg-white/20 rounded"></div>
@@ -548,7 +918,7 @@
               class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <a href="https://elearning-yt.vercel.app/" target="_blank" rel="noopener noreferrer"
                 class="btn-press min-h-[44px] px-6 py-2.5 rounded-full bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-transform flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-green-400">
-                <span>Live Demo</span>
+                <span data-i18n="proj.liveDemo">Live Demo</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -566,24 +936,24 @@
                 <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
                   Home Book
                 </h3>
-                <a href="https://elearning-yt.vercel.app/" target="_blank" rel="noopener noreferrer"
-                  class="text-slate-400 hover:text-white p-1" aria-label="Abrir demonstração do projeto Home Book">
+                <a data-i18n-attr="aria-label:aria.demoHome" href="https://elearning-yt.vercel.app/" target="_blank"
+                  rel="noopener noreferrer" class="text-slate-400 hover:text-white p-1"
+                  aria-label="Open Home Book project demo">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
                   </svg>
                 </a>
               </div>
-              <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                Modern e-learning platform focused on online courses, responsive interfaces and a smooth user
-                experience.
+              <p data-i18n="proj.elearning.d" class="text-slate-400 text-sm leading-relaxed mb-6">
+                E-learning platform with online courses, a responsive interface and a focus on user experience.
               </p>
             </div>
 
             <!-- Tech Badges -->
             <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
               <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Next.js</span>
+                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
               <span
                 class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
               <span
@@ -594,8 +964,9 @@
 
         </article>
 
-        <!-- Project 2: BurgerBite -->
-        <article class="project-item bento-card group flex flex-col h-full fade-in-up" data-category="ecommerce">
+        <!-- Project: BurgerBite -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-2"
+          data-category="ecommerce web">
 
           <!-- Browser Mockup Bar -->
           <div class="browser-header">
@@ -612,12 +983,13 @@
             <div
               class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-mono font-semibold text-white/70">Restaurant &amp; Delivery</span>
+                <span data-i18n="proj.burger.tag" class="text-xs font-mono font-semibold text-white/70">Restaurant &amp;
+                  Delivery</span>
                 <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
               </div>
               <div class="text-center">
                 <span class="text-2xl font-bold font-heading text-white">BurgerBite</span>
-                <p class="text-xs text-slate-400 mt-1">High-Conversion Gastronomy Site</p>
+                <p data-i18n="proj.burger.sub" class="text-xs text-slate-400 mt-1">High-Conversion Gastronomy Site</p>
               </div>
               <div class="flex gap-2">
                 <div class="h-2 w-1/2 bg-white/20 rounded"></div>
@@ -630,7 +1002,7 @@
               class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <a href="https://burger-pearl.vercel.app/" target="_blank" rel="noopener noreferrer"
                 class="btn-press min-h-[44px] px-6 py-2.5 rounded-full bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-transform flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-green-400">
-                <span>Live Demo</span>
+                <span data-i18n="proj.liveDemo">Live Demo</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -648,17 +1020,18 @@
                 <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
                   BurgerBite
                 </h3>
-                <a href="https://burger-pearl.vercel.app/" target="_blank" rel="noopener noreferrer"
-                  class="text-slate-400 hover:text-white p-1" aria-label="Abrir demonstração do BurgerBite">
+                <a data-i18n-attr="aria-label:aria.demoBurger" href="https://burger-pearl.vercel.app/" target="_blank"
+                  rel="noopener noreferrer" class="text-slate-400 hover:text-white p-1"
+                  aria-label="Open BurgerBite demo">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
                   </svg>
                 </a>
               </div>
-              <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                Responsive restaurant website with a modern interface, interactive menu, product presentation and
-                intuitive flow.
+              <p data-i18n="proj.burger.d" class="text-slate-400 text-sm leading-relaxed mb-6">
+                Responsive restaurant website with an interactive menu, product showcase and an intuitive navigation
+                flow.
               </p>
             </div>
 
@@ -676,8 +1049,9 @@
 
         </article>
 
-        <!-- Project 3: InVestor -->
-        <article class="project-item bento-card group flex flex-col h-full fade-in-up" data-category="fintech webapp">
+        <!-- Project: InVestor -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-2"
+          data-category="fintech webapp">
 
           <!-- Browser Mockup Bar -->
           <div class="browser-header">
@@ -694,12 +1068,13 @@
             <div
               class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
               <div class="flex items-center justify-between">
-                <span class="text-xs font-mono font-semibold text-white/70">FinTech Platform</span>
+                <span data-i18n="proj.invest.tag" class="text-xs font-mono font-semibold text-white/70">FinTech
+                  Platform</span>
                 <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
               </div>
               <div class="text-center">
                 <span class="text-2xl font-bold font-heading text-white">InVestor</span>
-                <p class="text-xs text-slate-400 mt-1">Asset Analytics Dashboard</p>
+                <p data-i18n="proj.invest.sub" class="text-xs text-slate-400 mt-1">Asset Analytics Dashboard</p>
               </div>
               <div class="flex gap-2">
                 <div class="h-2 w-2/3 bg-white/20 rounded"></div>
@@ -712,7 +1087,7 @@
               class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <a href="https://invest-peach.vercel.app/" target="_blank" rel="noopener noreferrer"
                 class="btn-press min-h-[44px] px-6 py-2.5 rounded-full bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-transform flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-green-400">
-                <span>Live Demo</span>
+                <span data-i18n="proj.liveDemo">Live Demo</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -730,28 +1105,28 @@
                 <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
                   InVestor
                 </h3>
-                <a href="https://invest-peach.vercel.app/" target="_blank" rel="noopener noreferrer"
-                  class="text-slate-400 hover:text-white p-1" aria-label="Abrir demonstração do InVestor">
+                <a data-i18n-attr="aria-label:aria.demoInvest" href="https://invest-peach.vercel.app/" target="_blank"
+                  rel="noopener noreferrer" class="text-slate-400 hover:text-white p-1" aria-label="Open InVestor demo">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
                   </svg>
                 </a>
               </div>
-              <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                Financial analytics dashboard with real-time portfolio metrics, responsive charts and intuitive asset
-                tracking.
+              <p data-i18n="proj.invest.d" class="text-slate-400 text-sm leading-relaxed mb-6">
+                Financial dashboard for tracking assets and portfolio metrics, with data visualization and a responsive
+                interface.
               </p>
             </div>
 
             <!-- Tech Badges -->
             <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
               <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Next.js</span>
+                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
               <span
                 class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
               <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Chart.js</span>
+                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">ChartJS</span>
             </div>
           </div>
 
@@ -759,54 +1134,32 @@
 
       </div>
 
+      <p data-i18n="proj.empty" id="projects-empty" class="hidden text-center text-sm text-slate-400 py-12"
+        role="status">
+        No projects in this category yet.
+      </p>
+
     </section>
 
     <!-- ==================== SKILLS TAXONOMY SECTION ==================== -->
-    <section id="skills" class="max-w-7xl mx-auto px-6 py-20" aria-label="Habilidades e Tecnologias">
+    <section data-i18n-attr="aria-label:aria.skills" id="skills" class="max-w-7xl mx-auto px-6 py-20"
+      aria-label="Skills and technologies">
 
-      <!-- Section Header -->
       <div class="max-w-3xl mb-14 fade-in-up">
         <p class="eyebrow-label mb-2">EXPERTISE &amp; STACK</p>
-        <h2 class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight">
-          Skills That Drive Results
+        <h2 data-i18n="skills.title"
+          class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight leading-tight">
+          Technologies I Work With
         </h2>
-        <p class="text-slate-400 text-base sm:text-lg mt-3">
-          Categorized technical proficiency developed over 4+ years of software engineering.
+        <p data-i18n="skills.sub" class="text-slate-400 text-base sm:text-lg mt-3">
+          A practical stack built through real-world product development across Web, Mobile and Backend.
         </p>
       </div>
 
-      <!-- Bento Skills Grid (8 Pillars) -->
+      <!-- Bento Skills Grid (12 categories) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <!-- Category 1: Front-End Core -->
-        <div class="bento-card  p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Front-End Core</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Next.js</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">TypeScript</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Vue.js</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Tailwind
-              CSS</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Custom
-              Hooks</span>
-          </div>
-        </div>
-
-        <!-- Category 2: APIs & Integration -->
-        <div class="bento-card  p-6 fade-in-up">
+        <div class="bento-card p-6 fade-in-up">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
               aria-hidden="true">
@@ -816,151 +1169,182 @@
                   d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 class="text-base font-bold font-heading text-white">APIs &amp; Integration</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">REST
-              APIs</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">GraphQL</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">JWT
-              Auth</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">OAuth
-              2.0</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">WebSockets</span>
-          </div>
-        </div>
-
-        <!-- Category 3: Testing & Quality -->
-        <div class="bento-card  p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Testing &amp; QA</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Jest</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Testing
-              Library</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Cypress</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Playwright</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Code
-              Review</span>
-          </div>
-        </div>
-
-        <!-- Category 4: Architecture & SOLID -->
-        <div class="bento-card  p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Architecture</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Micro
-              Frontends</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Clean
-              Code</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">SOLID</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Design
-              Systems</span>
-          </div>
-        </div>
-
-        <!-- Category 5: Back-End & DB -->
-        <div class="bento-card  p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M4 7v10c0 2 1.5 3 3.5 3h9c2 0 3.5-1 3.5-3V7c0-2-1.5-3-3.5-3h-9C5.5 4 4 5 4 7z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h4" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Back-End &amp; DB</h3>
+            <h3 data-i18n="skills.languages" class="text-base font-bold font-heading text-white">Languages</h3>
           </div>
           <div class="flex flex-wrap gap-2">
             <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Node.js</span>
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">JavaScript</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">TypeScript</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">C#</span>
             <span
               class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Python</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">PostgreSQL</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">MongoDB</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Prisma
-              ORM</span>
           </div>
         </div>
 
-        <!-- Category 6: Performance & Web Vitals -->
-        <div class="bento-card  p-6 fade-in-up">
+        <div class="bento-card p-6 fade-in-up">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
               aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
             </div>
-            <h3 class="text-base font-bold font-heading text-white">Performance &amp; SEO</h3>
+            <h3 class="text-base font-bold font-heading text-white">Frontend</h3>
           </div>
           <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Core Web
-              Vitals</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">LCP &amp;
-              INP Tuning</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Technical
-              SEO</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Lighthouse
-              95+</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">NextJS</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">TypeScript</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">JavaScript</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Vite</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">GitHub</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Kubernetes</span>
           </div>
         </div>
 
-        <!-- Category 7: DevOps & Delivery -->
-        <div class="bento-card  p-6 fade-in-up">
+        <div class="bento-card p-6 fade-in-up">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
               aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 class="text-base font-bold font-heading text-white">DevOps &amp; Cloud</h3>
+            <h3 class="text-base font-bold font-heading text-white">Mobile</h3>
           </div>
           <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Git &amp;
-              Gitflow</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Docker</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">GitHub
-              Actions</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">AWS /
-              Vercel</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React
+              Native</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Expo</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Expo
+              Router</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React
+              Navigation</span>
           </div>
         </div>
 
-        <!-- Category 8: AI & Automation -->
-        <div class="bento-card  p-6 fade-in-up">
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+              </svg>
+            </div>
+            <h3 class="text-base font-bold font-heading text-white">UI &amp; Styling</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">HTML</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">CSS</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">SASS</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Tailwind
+              CSS</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Styled
+              Components</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Material
+              UI</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Chakra
+              UI</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Radix
+              UI</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Shadcn
+              UI</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+              </svg>
+            </div>
+            <h3 class="text-base font-bold font-heading text-white">Backend — Strong</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">NodeJS</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">TypeScript</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">NestJS</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">ExpressJS</span>
+            <span data-i18n="skills.restApis"
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">REST APIs</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Fastify</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+              </svg>
+            </div>
+            <h3 class="text-base font-bold font-heading text-white">Backend — Experience</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">C#</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">.NET</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">ASP.NET
+              Core</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Entity
+              Framework</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Python /
+              FastAPI</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Web
+              API</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <h3 data-i18n="skills.security" class="text-base font-bold font-heading text-white">Security</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">AES</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Biometrics /
+              Face ID</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">RBAC</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">JWT</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">PKCE</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">IDOR</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Keychain</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Keystore</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
               aria-hidden="true">
@@ -970,17 +1354,258 @@
                   d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
               </svg>
             </div>
-            <h3 class="text-base font-bold font-heading text-white">AI &amp; Automation</h3>
+            <h3 class="text-base font-bold font-heading text-white">AI Development</h3>
           </div>
           <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Claude &amp;
-              GPT</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Prompt
-              Eng.</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Python</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">LLMs</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Claude
+              Code</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Cursor</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Codex</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">AI-assisted
+              development</span>
             <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">AI
-              Agents</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">n8n
+              integrations</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Copilot</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+              </svg>
+            </div>
+            <h3 class="text-base font-bold font-heading text-white">State &amp; Data</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React Query
+              / TanStack Query</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Zustand</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Jotai</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">SWR</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Redux</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React Hook
+              Form</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">GraphQL</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Apollo
+              Client</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            <h3 data-i18n="common.architectureH" class="text-base font-bold font-heading text-white">Architecture</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Clean
+              Architecture</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">SOLID</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Dependency
+              Injection</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">DTOs</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Factories</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Separation
+              of Concerns</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Mobile-First</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Offline-First</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">i18n</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 data-i18n="skills.testing" class="text-base font-bold font-heading text-white">Testing</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Jest</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React
+              Testing Library</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Detox</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Cypress</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Playwright</span>
+            <span data-i18n="skills.maestro"
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Maestro
+              (learning)</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Unit
+              Tests</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Integration
+              Tests</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">E2E</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+            </div>
+            <h3 class="text-base font-bold font-heading text-white">CI/CD &amp; Delivery</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">GitHub
+              Actions</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">EAS
               Workflows</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">OTA
+              Updates</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Git /
+              Gitflow</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Azure
+              DevOps</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Docker</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Husky</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+              </svg>
+            </div>
+            <h3 class="text-base font-bold font-heading text-white">Cloud &amp; Services</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Firebase</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Crashlytics</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Vercel</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Analytics</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Sentry</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Microsoft
+              Clarity</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+              </svg>
+            </div>
+            <h3 class="text-base font-bold font-heading text-white">Data &amp; Persistence</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">PostgreSQL</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">MongoDB</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Prisma
+              ORM</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">SQLite</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">MySQL</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Redis</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">RabbitMQ</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="text-base font-bold font-heading text-white">Engineering Quality</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Code
+              Review</span>
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Pull
+              Requests</span>
+            <span data-i18n="skills.errorHandling"
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Error
+              Handling</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Logging</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Performance</span>
+            <span data-i18n="skills.maintainability"
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Maintainability</span>
+            <span data-i18n="skills.observability"
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Observability</span>
+            <span data-i18n="skills.traceability"
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Traceability</span>
+          </div>
+        </div>
+
+        <div class="bento-card p-6 fade-in-up">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
+              aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <h3 data-i18n="skills.methodologies" class="text-base font-bold font-heading text-white">Methodologies</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Scrum</span>
+            <span
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Kanban</span>
+            <span data-i18n="skills.techDocs"
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Technical
+              Documentation</span>
+            <span data-i18n="skills.solutionDesign"
+              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Solution
+              Design</span>
           </div>
         </div>
 
@@ -988,29 +1613,177 @@
 
     </section>
 
-    <!-- ==================== CONTACT SECTION (WHATSAPP FORM ENHANCED) ==================== -->
-    <section id="contact" class="max-w-7xl mx-auto px-6 py-20 lg:py-28" aria-label="Seção de Contato e Conversão">
+    <!-- ==================== EXPERIENCE & STRENGTHS SECTION ==================== -->
+    <section data-i18n-attr="aria-label:aria.strengths" id="experience" class="max-w-7xl mx-auto px-6 py-20"
+      aria-label="Professional strengths">
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div class="max-w-3xl mb-14 fade-in-up">
 
-        <!-- Left Column: Copy & Direct Channels (5 Cols) -->
-        <div class="lg:col-span-5 space-y-6 fade-in-up">
-          <p class="eyebrow-label">CONTACT</p>
-          <h2 class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight leading-tight">
-            Let's Work Together!
+        <h2 data-i18n="exp.title"
+          class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight leading-tight">
+          Experience &amp; Strengths
+        </h2>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bento-card p-8 group fade-in-up">
+          <div
+            class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
+            aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 data-i18n="exp.adapt.t" class="text-xl font-bold font-heading text-white mb-3">Adaptability</h3>
+          <p data-i18n="exp.adapt.d" class="text-slate-400 text-sm leading-relaxed">
+            I learn new technologies and adapt quickly to different projects, contexts and business needs.
+          </p>
+        </div>
+
+        <div class="bento-card p-8 group fade-in-up">
+          <div
+            class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
+            aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 data-i18n="exp.arch.t" class="text-xl font-bold font-heading text-white mb-3">Software Architecture &amp;
+            Technical Leadership</h3>
+          <p data-i18n="exp.arch.d1" class="text-slate-400 text-sm leading-relaxed">
+            I work as a software architect: I lead the design of solutions, from requirements gathering to the technical
+            documentation for front-end, back-end and mobile, validated with the team before development. I define API
+            contracts, entities, interfaces, business rules, screen responsibilities and state and persistence
+            strategies.
+          </p>
+          <p data-i18n="exp.arch.d2" class="text-slate-400 text-sm leading-relaxed mt-3">
+            I coordinate technical development through:
+          </p>
+          <ol data-i18n-attr="aria-label:aria.leadFlow" class="mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-2"
+            aria-label="Technical coordination flow">
+            <li class="flex items-center gap-1.5"><span
+                class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300 text-white font-medium">Sprints</span><span
+                class="text-slate-600" aria-hidden="true">→</span></li>
+            <li class="flex items-center gap-1.5"><span
+                class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300 text-white font-medium">Kanban</span><span
+                class="text-slate-600" aria-hidden="true">→</span></li>
+            <li class="flex items-center gap-1.5"><span data-i18n="exp.chip.po"
+                class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300 text-white font-medium">PO
+                meetings</span><span class="text-slate-600" aria-hidden="true">→</span></li>
+            <li class="flex items-center gap-1.5"><span
+                class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300 text-white font-medium">Code
+                Review</span><span class="text-slate-600" aria-hidden="true">→</span></li>
+            <li class="flex items-center gap-1.5"><span data-i18n="exp.chip.pr"
+                class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300 text-white font-medium">PR
+                approvals</span><span class="text-slate-600" aria-hidden="true">→</span></li>
+            <li class="flex items-center gap-1.5"><span data-i18n="exp.chip.quality"
+                class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300 text-white font-medium">Technical
+                quality</span></li>
+          </ol>
+        </div>
+
+        <div class="bento-card p-8 group fade-in-up">
+          <div
+            class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
+            aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 data-i18n="exp.biz.t" class="text-xl font-bold font-heading text-white mb-3">Business + Technology</h3>
+          <p data-i18n="exp.biz.d" class="text-slate-400 text-sm leading-relaxed">
+            I turn business needs into requirements, rules, contracts, architectural decisions and clear technical
+            solutions.
+          </p>
+        </div>
+
+        <div class="bento-card p-8 group fade-in-up">
+          <div
+            class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
+            aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h3 data-i18n="exp.product.t" class="text-xl font-bold font-heading text-white mb-3">Product Vision</h3>
+          <p data-i18n="exp.product.d" class="text-slate-400 text-sm leading-relaxed">
+            I don't think only about implementation. I try to understand the problem, identify opportunities, assess
+            impacts and propose solutions that make sense for the product.
+          </p>
+        </div>
+
+        <div class="bento-card p-8 group fade-in-up">
+          <div
+            class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
+            aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </div>
+          <h3 data-i18n="exp.eng.t" class="text-xl font-bold font-heading text-white mb-3">Software Engineering</h3>
+          <p data-i18n="exp.eng.d" class="text-slate-400 text-sm leading-relaxed">
+            I look for a balance between delivery speed and technical quality, avoiding unnecessary complexity and
+            applying abstractions, patterns and architectural principles pragmatically.
+          </p>
+        </div>
+
+        <div class="bento-card p-8 group fade-in-up">
+          <div
+            class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300"
+            aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+            </svg>
+          </div>
+          <h3 data-i18n="exp.prod.t" class="text-xl font-bold font-heading text-white mb-3">Production Delivery</h3>
+          <p data-i18n="exp.prod.d" class="text-slate-400 text-sm leading-relaxed">
+            Experience following products from initial definition through build, CI/CD, publishing and evolution in
+            production.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section data-i18n-attr="aria-label:aria.contact" id="contact" class="max-w-7xl mx-auto px-6 py-20 lg:py-28"
+      aria-label="Contact section">
+
+      <div class="grid grid-cols-1 gap-12 items-start">
+
+        <!-- Copy & Direct Channels -->
+        <div class="max-w-2xl mx-auto w-full space-y-6 fade-in-up">
+          <p data-i18n="ct.eyebrow" class="eyebrow-label">CONTACT</p>
+          <h2 data-i18n="ct.title"
+            class="text-3xl sm:text-5xl font-bold font-heading text-white tracking-tight leading-tight">
+            Let's Build Something Great
           </h2>
-          <p class="text-slate-300 text-base leading-relaxed">
-            Looking for someone to build modern, scalable digital experiences? Whether it's a project, opportunity or
-            technical challenge, feel free to get in touch.
+          <p data-i18n="ct.text" class="text-slate-300 text-base leading-relaxed">
+            Looking for a Fullstack Developer who can understand the business, make solid technical decisions and take a
+            product from idea to production? Let's talk.
           </p>
 
           <!-- Direct Channels Cards -->
           <div class="space-y-3 pt-4">
 
             <!-- Email -->
-            <a href="mailto:vinicius.celestino@gmail.com"
+            <a data-i18n-attr="aria-label:aria.mail" href="mailto:vinideveloper386@gmail.com"
               class="bento-card p-4 flex items-center gap-4 group focus-visible:ring-2 focus-visible:ring-green-400"
-              aria-label="Enviar e-mail para vinicius.celestino@gmail.com">
+              aria-label="Send an email to vinideveloper386@gmail.com">
               <div
                 class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:scale-110 transition-transform shrink-0"
                 aria-hidden="true">
@@ -1021,16 +1794,18 @@
                 </svg>
               </div>
               <div class="min-w-0">
-                <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Direct Email</div>
+                <div data-i18n="ct.email" class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Direct
+                  Email</div>
                 <div class="text-sm font-semibold text-white truncate group-hover:text-green-400 transition-colors">
-                  vinicius.celestino@gmail.com</div>
+                  vinideveloper386@gmail.com</div>
               </div>
             </a>
 
             <!-- WhatsApp Direct -->
-            <a href="https://wa.me/5511999990000" target="_blank" rel="noopener noreferrer"
+            <a data-i18n-attr="aria-label:aria.wa" href="https://wa.me/5519983100871" target="_blank"
+              rel="noopener noreferrer"
               class="bento-card p-4 flex items-center gap-4 group focus-visible:ring-2 focus-visible:ring-green-400"
-              aria-label="Falar no WhatsApp pelo número +55 11 99999-0000">
+              aria-label="Chat on WhatsApp at +55 19 98310-0871">
               <div
                 class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:scale-110 transition-transform shrink-0"
                 aria-hidden="true">
@@ -1040,16 +1815,18 @@
                 </svg>
               </div>
               <div class="min-w-0">
-                <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Direct WhatsApp</div>
+                <div data-i18n="ct.wa" class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Direct
+                  WhatsApp</div>
                 <div class="text-sm font-semibold text-white truncate group-hover:text-green-400 transition-colors">
-                  +55 (11) 99999-0000</div>
+                  +55 (19) 98310-0871</div>
               </div>
             </a>
 
             <!-- GitHub Profile -->
-            <a href="https://github.com/viniciuscelestino" target="_blank" rel="noopener noreferrer"
+            <a data-i18n-attr="aria-label:aria.gh" href="https://github.com/ViniDevBR" target="_blank"
+              rel="noopener noreferrer"
               class="bento-card p-4 flex items-center gap-4 group focus-visible:ring-2 focus-visible:ring-green-400"
-              aria-label="Visitar perfil no GitHub: github.com/viniciuscelestino">
+              aria-label="Visit the GitHub profile: github.com/ViniDevBR">
               <div
                 class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:scale-110 transition-transform shrink-0"
                 aria-hidden="true">
@@ -1059,79 +1836,15 @@
                 </svg>
               </div>
               <div class="min-w-0">
-                <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400">GitHub Code</div>
+                <div data-i18n="ct.gh" class="text-[11px] font-mono uppercase tracking-wider text-slate-400">GitHub Code
+                </div>
                 <div class="text-sm font-semibold text-white truncate group-hover:text-green-400 transition-colors">
-                  github.com/viniciuscelestino</div>
+                  github.com/ViniDevBR</div>
               </div>
             </a>
 
           </div>
 
-        </div>
-
-        <!-- Right Column: Interactive WhatsApp Integrated Form (7 Cols) -->
-        <div class="lg:col-span-7 fade-in-up">
-          <div class="bento-card p-8 sm:p-10 relative">
-
-            <h3 class="text-xl font-bold font-heading text-white mb-2">Send a Message</h3>
-            <p class="text-slate-400 text-sm mb-6">Fill in the fields below and start a direct conversation on WhatsApp.
-            </p>
-
-            <form id="contact-form" class="space-y-5" novalidate>
-
-              <!-- Name Input -->
-              <div>
-                <label for="form-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-                  Your Name <span class="text-green-400">*</span>
-                </label>
-                <input type="text" id="form-name" name="name" required autocomplete="name" placeholder="e.g. John Doe"
-                  class="w-full min-h-[44px] px-4 py-3 rounded-xl bg-[#0a0d14] border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-green-400 focus:ring-2 focus:ring-green-400/20 transition-all text-sm" />
-              </div>
-
-              <!-- Email Input -->
-              <div>
-                <label for="form-email"
-                  class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-                  Your Email <span class="text-green-400">*</span>
-                </label>
-                <input type="email" id="form-email" name="email" required autocomplete="email"
-                  placeholder="e.g. john@company.com"
-                  class="w-full min-h-[44px] px-4 py-3 rounded-xl bg-[#0a0d14] border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-green-400 focus:ring-2 focus:ring-green-400/20 transition-all text-sm" />
-              </div>
-
-              <!-- Message Input with Live Character Counter -->
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <label for="form-message" class="text-xs font-semibold uppercase tracking-wider text-slate-300">
-                    Your Project or Challenge <span class="text-green-400">*</span>
-                  </label>
-                  <span id="char-count" class="text-[11px] font-mono text-slate-500" aria-live="polite">0 / 500</span>
-                </div>
-                <textarea id="form-message" name="message" rows="5" maxlength="500" required
-                  placeholder="Tell me about your web application, timeline or opportunity..."
-                  class="w-full px-4 py-3.5 rounded-xl bg-[#0a0d14] border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-green-400 focus:ring-2 focus:ring-green-400/20 transition-all text-sm resize-none"></textarea>
-              </div>
-
-              <!-- Status Announcement for Screen Readers & Visual Feedback -->
-              <div id="form-feedback" class="text-xs font-medium min-h-[20px]" role="status" aria-live="polite"></div>
-
-              <!-- Submit Button -->
-              <button type="submit"
-                class="btn-press w-full min-h-[48px] py-4 rounded-xl font-bold font-heading text-sm uppercase tracking-wider bg-white hover:bg-slate-200 text-slate-950 transition-all duration-200 shadow-lg shadow-white/10 flex items-center justify-center gap-2 cursor-pointer focus-visible:ring-2 focus-visible:ring-green-400">
-                <span>Send via WhatsApp</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
-              </button>
-
-              <p class="text-center text-[11px] text-slate-500">
-                You'll be seamlessly redirected to WhatsApp with your draft formatted and ready to send.
-              </p>
-
-            </form>
-
-          </div>
         </div>
 
       </div>
@@ -1144,58 +1857,45 @@
   <div id="cv-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title"
     aria-hidden="true">
     <div class="modal-content p-8 relative">
-
-      <!-- Close Modal Button -->
-      <button id="close-cv-modal" type="button"
+      <button data-i18n-attr="aria-label:aria.closeModal" id="close-cv-modal" type="button"
         class="absolute top-5 right-5 p-2 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-green-400"
-        aria-label="Fechar Modal">
+        aria-label="Close modal">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
           stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
 
-      <div
-        class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-white flex items-center justify-center mb-5"
-        aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-      </div>
-
-      <h3 id="cv-modal-title" class="text-2xl font-bold font-heading text-white mb-2">Download Curriculum Vitae</h3>
-      <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+      <h3 data-i18n="cv.title" id="cv-modal-title" class="text-2xl font-bold font-heading text-white mb-2">Download
+        Curriculum Vitae</h3>
+      <p data-i18n="cv.text" class="text-slate-400 text-sm mb-6 leading-relaxed">
         Select your preferred language version of Vinicius Celestino's CV:
       </p>
 
       <div class="space-y-3">
-        <!-- English CV -->
         <a href="#contact"
           class="btn-press flex items-center justify-between p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-green-400 transition-all text-sm font-semibold text-white group focus-visible:ring-2 focus-visible:ring-green-400">
           <div class="flex items-center gap-3">
             <span class="w-2.5 h-2.5 rounded-full bg-white"></span>
-            <span>Curriculum Vitae (English)</span>
+            <span data-i18n="cv.en">Curriculum Vitae (English)</span>
           </div>
           <span class="text-xs font-mono text-slate-400 group-hover:text-green-400">PDF · EN-US</span>
         </a>
 
-        <!-- Portuguese CV -->
         <a href="#contact"
           class="btn-press flex items-center justify-between p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 hover:border-green-400 transition-all text-sm font-semibold text-white group focus-visible:ring-2 focus-visible:ring-green-400">
           <div class="flex items-center gap-3">
             <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
-            <span>Currículo (Português)</span>
+            <span data-i18n="cv.pt">Resume (Portuguese)</span>
           </div>
           <span class="text-xs font-mono text-slate-400 group-hover:text-green-400">PDF · PT-BR</span>
         </a>
       </div>
 
       <div class="mt-6 pt-4 border-t border-white/10 text-center">
-        <a href="https://github.com/viniciuscelestino" target="_blank" rel="noopener noreferrer"
+        <a data-i18n="cv.github" href="https://github.com/ViniDevBR" target="_blank" rel="noopener noreferrer"
           class="text-xs text-slate-400 hover:text-white transition-colors">
-          Or view full interactive technical profile on GitHub &rarr;
+          Or view the full technical profile on GitHub &rarr;
         </a>
       </div>
 
@@ -1203,9 +1903,9 @@
   </div>
 
   <!-- ==================== FLOATING BACK TO TOP BUTTON ==================== -->
-  <button id="back-to-top" type="button"
-    class="btn-press fixed bottom-24 sm:bottom-6 right-4 sm:right-6 z-40 p-3 rounded-full bg-[#12151f] border border-white/10 text-slate-300 hover:text-white hover:border-green-400/40 shadow-xl opacity-0 pointer-events-none translate-y-4 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-green-400"
-    aria-label="Voltar ao Topo">
+  <button data-i18n-attr="aria-label:aria.backTop" id="back-to-top" type="button"
+    class="btn-press fixed bottom-28 md:bottom-6 right-4 sm:right-6 z-40 p-3 rounded-full bg-[#12151f] border border-white/10 text-slate-300 hover:text-white hover:border-green-400/40 shadow-xl opacity-0 pointer-events-none translate-y-4 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-green-400"
+    aria-label="Back to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"
       stroke-width="2.5" aria-hidden="true">
       <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
@@ -1213,26 +1913,59 @@
   </button>
 
   <!-- ==================== FOOTER ==================== -->
-  <footer class="border-t border-white/5 bg-[#050608] pt-12 pb-28 sm:pb-24 relative z-10" aria-label="Rodapé do Site">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+  <footer data-i18n-attr="aria-label:aria.footer"
+    class="border-t border-white/5 bg-[#0f0f10] pt-16 sm:pt-24 pb-28 sm:pb-24 relative z-10" aria-label="Site footer">
+    <div class="max-w-[100rem] mx-auto px-4 sm:px-6 flex flex-col items-center gap-10 sm:gap-14">
 
-      <div class="flex items-center gap-3">
-        <a href="#home"
-          class="text-lg font-bold font-heading tracking-tight text-white hover:text-green-400 transition-colors p-1"
-          aria-label="Voltar ao início">
-          <span class="text-green-400">VC</span>.dev
-        </a>
-        <span class="text-slate-700" aria-hidden="true">|</span>
-        <span class="text-slate-400 font-handwriting text-base">Designed &amp; engineered with precision</span>
-      </div>
+      <a href="#home" data-i18n-attr="aria-label:aria.home" aria-label="Back to home"
+        class="w-full rounded-2xl focus-visible:ring-2 focus-visible:ring-green-400">
+        <span
+          class="block font-sans font-extrabold tracking-tight leading-none whitespace-nowrap text-center text-[11vw] text-white select-none">Vinicius
+          Celestino</span>
+      </a>
 
-      <div class="text-xs text-slate-500 text-center sm:text-right">
-        <p>&copy; <span id="current-year">2026</span> Vinicius Celestino. All rights reserved.</p>
+      <nav data-i18n-attr="aria-label:aria.footerNav" aria-label="Footer navigation">
+        <ul
+          class="flex flex-wrap items-center justify-center gap-x-6 sm:gap-x-10 gap-y-3 font-heading text-xl sm:text-2xl uppercase tracking-wide text-white">
+          <li><a href="#about" data-i18n="nav.about"
+              class="footer-nav-link transition-colors hover:text-green-400 focus-visible:ring-2 focus-visible:ring-green-400 rounded">About</a>
+          </li>
+          <li><a href="#services" data-i18n="nav.services"
+              class="footer-nav-link transition-colors hover:text-green-400 focus-visible:ring-2 focus-visible:ring-green-400 rounded">Services</a>
+          </li>
+          <li><a href="#projects" data-i18n="nav.projects"
+              class="footer-nav-link transition-colors hover:text-green-400 focus-visible:ring-2 focus-visible:ring-green-400 rounded">Projects</a>
+          </li>
+          <li><a href="#skills"
+              class="footer-nav-link transition-colors hover:text-green-400 focus-visible:ring-2 focus-visible:ring-green-400 rounded">Skills</a>
+          </li>
+          <li><a href="#contact" data-i18n="nav.contact"
+              class="footer-nav-link transition-colors hover:text-green-400 focus-visible:ring-2 focus-visible:ring-green-400 rounded">Contact</a>
+          </li>
+          <li>
+            <button type="button" data-i18n-attr="aria-label:aria.download" aria-label="Download CV"
+              class="open-cv-modal uppercase tracking-wide footer-nav-link transition-colors hover:text-green-400 focus-visible:ring-2 focus-visible:ring-green-400 rounded">
+              <span data-i18n="nav.downloadPrefix">Download </span>CV
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div
+      class="max-w-[100rem] mx-auto px-4 sm:px-6 mt-10 sm:mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
+      <div class="lang-switch" role="group" aria-label="Language / Idioma">
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
       </div>
+      <p class="text-sm text-white text-center">&copy; <span id="current-year">2026</span> Vinicius Celestino. <span
+          data-i18n="footer.rights">All rights reserved.</span></p>
     </div>
   </footer>
 
   <!-- Core Scripts -->
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 
