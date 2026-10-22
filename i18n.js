@@ -61,7 +61,6 @@
     "proj.eyebrow": "PORTFÓLIO",
     "proj.title": "Projetos em Destaque",
     "proj.sub": "Projetos que representam minha experiência em arquitetura de software, desenvolvimento Fullstack, Mobile e entrega de produto.",
-    "proj.viewAll": "Ver tudo no GitHub",
     "proj.professional": "Projeto profissional",
     "proj.intrapay.tag": "Banco digital",
     "proj.intrapay.d": "Banco digital desenvolvido com abordagem mobile-first, arquitetura escalável e foco em segurança, qualidade e experiência do usuário.",
