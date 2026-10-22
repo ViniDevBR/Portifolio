@@ -249,7 +249,7 @@ A hierarquia visual do portfólio deve priorizar os projetos profissionais **Int
 | **State & Data** | React Query / TanStack Query · Zustand · Jotai · SWR · Redux · React Hook Form · GraphQL · Apollo Client |
 | **Architecture** | Clean Architecture · SOLID · Dependency Injection · DTOs · Factories · Separation of Concerns · Mobile-First · Offline-First · i18n |
 | **Testing** | Jest · React Testing Library · Detox · Cypress · Playwright · Maestro (learning) · Unit Tests · Integration Tests · E2E |
-| **CI/CD & Delivery** | GitHub Actions · EAS Workflows · OTA Updates · Git / Gitflow · Azure DevOps · Docker · Husky · GitHub · Kubernetes |
+| **CI/CD & Delivery** | GitHub Actions · EAS Workflows · OTA Updates · Git / Gitflow · Azure DevOps · Docker · Husky · GitHub |
 | **Cloud & Services** | Firebase · Crashlytics · Vercel · Analytics · Sentry · Microsoft Clarity |
 | **Data & Persistence** | PostgreSQL · MongoDB · Prisma ORM · SQLite · MySQL · Redis · RabbitMQ |
 | **Engineering Quality** | Code Review · Pull Requests · Error Handling · Logging · Performance · Maintainability · Observability · Traceability |

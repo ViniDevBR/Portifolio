@@ -84,6 +84,7 @@
           VC
         </a>
         <div class="lang-switch" role="group" aria-label="Language / Idioma">
+          <svg class="ml-2.5 mr-1 shrink-0 text-white/60" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6" /><path d="m4 14 6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" /><path d="m22 22-5-10-5 10" /><path d="M14 18h6" /></svg>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
           <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
         </div>
@@ -1145,456 +1146,211 @@
         </p>
       </div>
 
-      <!-- Bento Skills Grid (12 categories) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Skills: loose groups of icon pills (no cards) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-10">
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <h3 data-i18n="skills.languages" class="text-base font-bold font-heading text-white">Languages</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">JavaScript</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">TypeScript</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">C#</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Python</span>
+        <div class="fade-in-up">
+          <h3 data-i18n="skills.languages" class="text-lg font-bold text-white mb-4">Languages</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/javascript" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>JavaScript</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/typescript" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>TypeScript</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>C#</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/python" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Python</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Frontend</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">NextJS</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">TypeScript</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">JavaScript</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Vite</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">GitHub</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Kubernetes</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">Frontend</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/react" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>React</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/nextdotjs/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>NextJS</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/typescript" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>TypeScript</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/javascript" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>JavaScript</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/vite" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Vite</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/github/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>GitHub</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Mobile</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React
-              Native</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Expo</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Expo
-              Router</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React
-              Navigation</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">Mobile</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/react" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>React Native</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/expo/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Expo</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/expo/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Expo Router</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="assets/img/react-navigation.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>React Navigation</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">UI &amp; Styling</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">HTML</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">CSS</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">SASS</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Tailwind
-              CSS</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Styled
-              Components</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Material
-              UI</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Chakra
-              UI</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Radix
-              UI</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Shadcn
-              UI</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">UI &amp; Styling</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/html5" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>HTML</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/css" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>CSS</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/sass" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>SASS</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/tailwindcss" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Tailwind CSS</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/styledcomponents" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Styled Components</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/mui" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Material UI</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/chakraui" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Chakra UI</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/radixui/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Radix UI</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/shadcnui/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Shadcn UI</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Backend — Strong</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">NodeJS</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">TypeScript</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">NestJS</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">ExpressJS</span>
-            <span data-i18n="skills.restApis"
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">REST APIs</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Fastify</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">Backend — Strong</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/nodedotjs" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>NodeJS</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/typescript" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>TypeScript</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/nestjs" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>NestJS</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/express/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>ExpressJS</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/fastify/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Fastify</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span data-i18n="skills.restApis">REST APIs</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Backend — Experience</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">C#</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">.NET</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">ASP.NET
-              Core</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Entity
-              Framework</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Python /
-              FastAPI</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Web
-              API</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">Backend — Experience</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>C#</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/dotnet" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>.NET</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/dotnet" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>ASP.NET Core</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/dotnet" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Entity Framework</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/fastapi" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Python / FastAPI</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span>Web API</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-            </div>
-            <h3 data-i18n="skills.security" class="text-base font-bold font-heading text-white">Security</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">AES</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Biometrics /
-              Face ID</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">RBAC</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">JWT</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">PKCE</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">IDOR</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Keychain</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Keystore</span>
+        <div class="fade-in-up">
+          <h3 data-i18n="skills.security" class="text-lg font-bold text-white mb-4">Security</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/expo/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>AES</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/><path d="M14 13.12c0 2.38 0 6.38-1 8.88"/><path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"/><path d="M2 12a10 10 0 0 1 18-6"/><path d="M2 16h.01"/><path d="M21.8 16c.2-2 .131-5.354 0-6"/><path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2"/><path d="M8.65 22c.21-.66.45-1.32.57-2"/><path d="M9 6.8a6 6 0 0 1 9 5.2v2"/></svg><span>Biometrics / Face ID</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>RBAC</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/jsonwebtokens" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>JWT</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>PKCE</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/apple/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Keychain</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/android" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Keystore</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>IDOR</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">AI Development</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Python</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">LLMs</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Claude
-              Code</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Cursor</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Codex</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">AI-assisted
-              development</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">AI
-              integrations</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Copilot</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">AI Development</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/python" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Python</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg><span>LLMs</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/claude" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Claude Code</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/cursor/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Cursor</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="assets/img/codex.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Codex</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg><span>AI-assisted development</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg><span>AI integrations</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/githubcopilot/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Copilot</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">State &amp; Data</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React Query
-              / TanStack Query</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Zustand</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Jotai</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">SWR</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Redux</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React Hook
-              Form</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">GraphQL</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Apollo
-              Client</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">State &amp; Data</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/reactquery" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>React Query / TanStack Query</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://api.iconify.design/devicon/zustand.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0 brightness-0 invert"><span>Zustand</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://api.iconify.design/logos/jotai.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0 brightness-0 invert object-cover object-left"><span>Jotai</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/swr/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>SWR</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/redux" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Redux</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/reacthookform" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>React Hook Form</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/graphql" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>GraphQL</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/apollographql/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Apollo Client</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-              </svg>
-            </div>
-            <h3 data-i18n="common.architectureH" class="text-base font-bold font-heading text-white">Architecture</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Clean
-              Architecture</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">SOLID</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Dependency
-              Injection</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">DTOs</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Factories</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Separation
-              of Concerns</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Mobile-First</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Offline-First</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">i18n</span>
+        <div class="fade-in-up">
+          <h3 data-i18n="common.architectureH" class="text-lg font-bold text-white mb-4">Architecture</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><span>Mobile-First</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></svg><span>Offline-First</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg><span>i18n</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Clean Architecture</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>SOLID</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Dependency Injection</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>DTOs</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Factories</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Separation of Concerns</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <h3 data-i18n="skills.testing" class="text-base font-bold font-heading text-white">Testing</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Jest</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">React
-              Testing Library</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Detox</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Cypress</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Playwright</span>
-            <span data-i18n="skills.maestro"
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Maestro
-              (learning)</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Unit
-              Tests</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Integration
-              Tests</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">E2E</span>
+        <div class="fade-in-up">
+          <h3 data-i18n="skills.testing" class="text-lg font-bold text-white mb-4">Testing</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/jest" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Jest</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/testinglibrary" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>React Testing Library</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="assets/img/detox.png" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0 object-contain"><span>Detox</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/cypress/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Cypress</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/playwright/playwright-original.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Playwright</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="assets/img/maestro.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span data-i18n="skills.maestro">Maestro (learning)</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5V2"/><path d="M8.5 2h7"/><path d="M14.5 16h-5"/></svg><span>Unit Tests</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5V2"/><path d="M8.5 2h7"/><path d="M14.5 16h-5"/></svg><span>Integration Tests</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><svg class="w-4 h-4 shrink-0 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5V2"/><path d="M8.5 2h7"/><path d="M14.5 16h-5"/></svg><span>E2E</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">CI/CD &amp; Delivery</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">GitHub
-              Actions</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">EAS
-              Workflows</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">OTA
-              Updates</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Git /
-              Gitflow</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Azure
-              DevOps</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Docker</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Husky</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">CI/CD &amp; Delivery</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/githubactions" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>GitHub Actions</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/expo/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>EAS Workflows</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/git" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Git / Gitflow</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/azuredevops/azuredevops-original.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Azure DevOps</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/docker" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Docker</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://api.iconify.design/vscode-icons/file-type-husky.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Husky</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>OTA Updates</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Cloud &amp; Services</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Firebase</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Crashlytics</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Vercel</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Analytics</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Sentry</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Microsoft
-              Clarity</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">Cloud &amp; Services</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/firebase" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Firebase</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/firebase" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Crashlytics</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/vercel/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Vercel</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/firebase" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Analytics</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/sentry" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Sentry</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://api.iconify.design/logos/microsoft-icon.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Microsoft Clarity</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Data &amp; Persistence</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">PostgreSQL</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">MongoDB</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Prisma
-              ORM</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">SQLite</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">MySQL</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Redis</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">RabbitMQ</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">Data &amp; Persistence</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/postgresql" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>PostgreSQL</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/mongodb" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>MongoDB</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/prisma/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Prisma ORM</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/sqlite" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>SQLite</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/mysql" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>MySQL</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/redis" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Redis</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/rabbitmq" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>RabbitMQ</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-            </div>
-            <h3 class="text-base font-bold font-heading text-white">Engineering Quality</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Code
-              Review</span>
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Pull
-              Requests</span>
-            <span data-i18n="skills.errorHandling"
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Error
-              Handling</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Logging</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Performance</span>
-            <span data-i18n="skills.maintainability"
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Maintainability</span>
-            <span data-i18n="skills.observability"
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Observability</span>
-            <span data-i18n="skills.traceability"
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Traceability</span>
+        <div class="fade-in-up">
+          <h3 class="text-lg font-bold text-white mb-4">Engineering Quality</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Code Review</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Pull Requests</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span data-i18n="skills.errorHandling">Error Handling</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Logging</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Performance</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span data-i18n="skills.maintainability">Maintainability</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span data-i18n="skills.observability">Observability</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span data-i18n="skills.traceability">Traceability</span></span>
           </div>
         </div>
 
-        <div class="bento-card p-6 fade-in-up">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-white/5 text-white flex items-center justify-center shrink-0"
-              aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-              </svg>
-            </div>
-            <h3 data-i18n="skills.methodologies" class="text-base font-bold font-heading text-white">Methodologies</h3>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Scrum</span>
-            <span
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Kanban</span>
-            <span data-i18n="skills.techDocs"
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Technical
-              Documentation</span>
-            <span data-i18n="skills.solutionDesign"
-              class="px-2.5 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-slate-300">Solution
-              Design</span>
+        <div class="fade-in-up">
+          <h3 data-i18n="skills.methodologies" class="text-lg font-bold text-white mb-4">Methodologies</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Scrum</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span>Kanban</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span data-i18n="skills.techDocs">Technical Documentation</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><span data-i18n="skills.solutionDesign">Solution Design</span></span>
           </div>
         </div>
 
@@ -1945,6 +1701,7 @@
     <div
       class="max-w-[100rem] mx-auto px-4 sm:px-6 mt-10 sm:mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
       <div class="lang-switch" role="group" aria-label="Language / Idioma">
+          <svg class="ml-2.5 mr-1 shrink-0 text-white/60" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6" /><path d="m4 14 6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" /><path d="m22 22-5-10-5 10" /><path d="M14 18h6" /></svg>
         <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
         <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
       </div>
