@@ -1,0 +1,25 @@
+# Vinicius Celestino
+
+> Fullstack Developer working across Web, Mobile and Backend, combining software engineering, architecture, performance and product vision. Specialized in React, React Native, NextJS, TypeScript and NodeJS, with experience in Clean Architecture, SOLID, automated testing and CI/CD. The site is a one-page portfolio available in English and Portuguese (pt-BR).
+
+## Site
+
+- [Portfolio](https://www.vinidevbr.com/): single page with About, Services, Projects, Skills and Contact sections. Language switch EN | PT in the header and footer.
+
+## Professional projects
+
+All projects are professional work; there are no public demo links.
+
+- IntraPay (Fintech): fintech app and website for PIX and other payment transactions, with elevated security on every user input. React Native, Expo, NestJS, NextJS, TypeScript.
+- Growzone (Social network): cannabis-focused social network app with chat and posts. React Native, Expo, Python, FastAPI, React, TypeScript.
+- BeXpenso (Expense management): app for employee expense reporting, advances and period closings. React Native, Expo, C#, .NET, TypeScript.
+- ERP Suporte (ERP): app integrated with the Benner ERP, covering 15 ERP modules and its business rules. React Native, Expo, C#, .NET, TypeScript.
+- BVendas (E-commerce): purchasing app with a guest mode and encrypted card data. React Native, Expo, C#, .NET, TypeScript.
+- HelpGuincho (On-demand service): tow truck booking app and website with real-time tracking. React Native, Expo, NestJS, TypeScript.
+- Mercosistem (ERP): web ERP with multiple modules and PDF generation. React, NextJS, Material UI, TypeScript.
+
+## Contact
+
+- Email: vinideveloper386@gmail.com
+- GitHub: https://github.com/ViniDevBR
+- LinkedIn: https://www.linkedin.com/in/vinicius-celestino/
