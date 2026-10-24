@@ -1,6 +1,9 @@
 {
+  "$schema": "https://unpkg.com/wrangler@4.152.0/config-schema.json",
   "name": "portifolio",
   "compatibility_date":"2026-10-19",
+  "workers_dev": false,
+  "preview_urls": false,
   "observability": {
     "logs": {
       "enabled": true,
@@ -15,7 +18,7 @@
     },
     "issue_detection": {
       "enabled": true
-    }
+    },
   },
   "assets": {
     "directory": "."
