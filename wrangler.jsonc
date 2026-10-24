@@ -15,5 +15,8 @@
     "issue_detection": {
       "enabled": true
     }
+  },
+  "assets": {
+    "directory": "./dist"
   }
 }
