@@ -18,7 +18,7 @@
     const stageH = stage.offsetHeight;
     scroller.style.height = `${travel + stageH}px`;
     // a rolagem horizontal começa quando o palco cola, centrado na tela
-    top = scroller.getBoundingClientRect().top + scrollY - (innerHeight - stageH) / 2;
+    top = scroller.getBoundingClientRect().top + scrollY - parseFloat(getComputedStyle(stage).top);
     range = Math.max(1, travel);
     centers = panels.map((p) => p.offsetLeft + p.offsetWidth / 2);
   };

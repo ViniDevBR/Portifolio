@@ -424,6 +424,7 @@ body {
 .jh-on .jh-stage {
   --jh-h: min(100vh, 34rem);
   position: sticky; top: calc((100vh - var(--jh-h)) / 2); height: var(--jh-h); overflow: hidden;
+  background: var(--color-bg-base);
   display: flex; align-items: center;
 }
 .jh-on .jh-track {
@@ -446,3 +447,13 @@ body {
 .jh-on .jh-panel { width: min(85vw, 44rem); }
 /* palco em tela cheia: sai do container para os painéis não serem cortados nas laterais */
 .jh-on .jh-scroll { width: 100vw; margin-left: calc(50% - 50vw); }
+
+/* Mobile: min-h-screen (100vh) = viewport com a barra de URL recolhida; svh evita o conteudo do hero ficar sob a dock */
+@supports (min-height: 100svh) {
+  #home { min-height: 100svh; }
+}
+
+/* iOS Safari: overlay fixo em tela cheia faz a barra inferior ser pintada de preto em vez de mostrar a pagina */
+@media (max-width: 1024px) {
+  .noise-overlay { display: none; }
+}
