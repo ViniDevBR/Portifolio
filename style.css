@@ -379,3 +379,70 @@ body {
   background: #ffffff;
   color: #0f0f10;
 }
+
+/* ==========================================================================
+   JOURNEY TEST v2 (scroll-driven timeline) — remover junto com #journey-test
+   ========================================================================== */
+.jt-year {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.22);
+  transition: color 0.5s ease, -webkit-text-stroke-color 0.5s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.jt-card {
+  opacity: 0.35;
+  transform: rotate(var(--r)) translateY(16px);
+  transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s ease;
+}
+.jt-dot { transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease; }
+.jt-item.is-active .jt-year {
+  color: #fff;
+  -webkit-text-stroke-color: #fff;
+  transform: scale(1.04);
+}
+.jt-item.is-active .jt-card { opacity: 1; transform: rotate(0) translateY(0); border-color: var(--color-border-accent); }
+.jt-item.is-active .jt-dot { background: #32d74b; border-color: #32d74b; box-shadow: 0 0 0 6px rgba(50, 215, 75, 0.18); }
+
+/* ==========================================================================
+   JOURNEY TEST v3 (rolagem horizontal 3D) — remover junto com #journey-h
+   Estático por padrão; o JS adiciona .jh-on quando pode animar.
+   ========================================================================== */
+.jh-track { display: flex; flex-direction: column; gap: 3rem; }
+.jh-panel { position: relative; }
+.jh-hud, .jh-hint { display: none; }
+.jh-year {
+  color: rgba(255, 255, 255, 0.06);
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.25);
+  transition: color 0.4s ease, -webkit-text-stroke-color 0.4s ease, text-shadow 0.4s ease;
+}
+.jh-panel.is-active .jh-year {
+  color: rgba(50, 215, 75, 0.14);
+  -webkit-text-stroke-color: #32d74b;
+  text-shadow: 0 0 60px rgba(50, 215, 75, 0.3);
+}
+.jh-panel.is-active .jh-card { border-color: var(--color-border-accent); }
+
+.jh-on .jh-stage {
+  --jh-h: min(100vh, 34rem);
+  position: sticky; top: calc((100vh - var(--jh-h)) / 2); height: var(--jh-h); overflow: hidden;
+  display: flex; align-items: center;
+}
+.jh-on .jh-track {
+  flex-direction: row; align-items: center; gap: 8vw;
+  padding: 0 calc((100vw - min(85vw, 44rem)) / 2); will-change: transform;
+}
+.jh-on .jh-panel {
+  flex: none; width: min(80vw, 34rem);
+  opacity: calc(0.25 + 0.75 * var(--a, 1));
+  transform: perspective(1200px) rotateY(calc(var(--s, 0) * (1 - var(--a, 1)) * 30deg)) scale(calc(0.8 + 0.2 * var(--a, 1)));
+}
+.jh-on .jh-hud {
+  display: flex; align-items: center; gap: 1rem;
+  position: absolute; left: 10vw; right: 10vw; bottom: 1rem;
+}
+.jh-on .jh-hint { display: inline; }
+.jh-bar { flex: 1; height: 2px; background: rgba(255, 255, 255, 0.12); position: relative; }
+.jh-bar-fill { position: absolute; inset: 0; background: #32d74b; transform-origin: left; transform: scaleX(0); }
+.jh-word { font-size: clamp(4rem, 13vw, 9rem); }
+.jh-on .jh-panel { width: min(85vw, 44rem); }
+/* palco em tela cheia: sai do container para os painéis não serem cortados nas laterais */
+.jh-on .jh-scroll { width: 100vw; margin-left: calc(50% - 50vw); }
