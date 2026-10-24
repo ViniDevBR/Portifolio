@@ -240,7 +240,7 @@ A hierarquia visual do portfólio deve priorizar os projetos profissionais **Int
 | :--- | :--- |
 | **Languages** | JavaScript · TypeScript · C# · Python |
 | **Frontend** | React · NextJS · TypeScript · JavaScript · Vite |
-| **Mobile** | React Native · Expo · Expo Router · React Navigation |
+| **Mobile** | React Native · Expo · Expo Router · React Navigation · NativeWind |
 | **UI & Styling** | HTML · CSS · SASS · Tailwind CSS · Styled Components · Material UI · Chakra UI · Radix UI · Shadcn UI |
 | **Backend — Strong** | NodeJS · TypeScript · NestJS · ExpressJS · REST APIs · Fastify |
 | **Backend — Experience** | C# · .NET · ASP.NET Core · Entity Framework · Python / FastAPI · Web API |

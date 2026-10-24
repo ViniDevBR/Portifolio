@@ -269,6 +269,25 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
+  // 7. Project Detail Dialogs (native <dialog>: focus trap, ESC and focus return are built in)
+  // =========================================================================
+  document.querySelectorAll('[data-open-project]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const dialog = document.getElementById(btn.dataset.openProject);
+      if (!dialog) return;
+      dialog.showModal();
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  document.querySelectorAll('.project-dialog').forEach(dialog => {
+    dialog.addEventListener('close', () => { document.body.style.overflow = ''; });
+    // The dialog fills its own box, so a click on the dialog element itself can only be the backdrop.
+    dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
+    dialog.querySelector('[data-close-project]')?.addEventListener('click', () => dialog.close());
+  });
+
+  // =========================================================================
   // 8. Active Navbar Highlighter with IntersectionObserver
   // =========================================================================
   const sections = document.querySelectorAll('section[id]');

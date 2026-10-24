@@ -596,104 +596,456 @@
       </div>
       -->
 
-      <!-- Projects Grid: professional projects first (wider), public demos as support -->
+      <!-- Projects Grid: 3 featured (IntraPay, Growzone, BeXpenso), then the other professional projects.
+           Each card opens its <dialog> below (screenshots + details). Images live in assets/img/projects/<folder>/ -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
 
-        <!-- Project: IntraPay (professional) -->
-        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-3"
+        <!-- Project: IntraPay -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-2"
           data-category="fintech mobile web">
 
           <div class="browser-header">
             <span class="browser-dot dot-close" aria-hidden="true"></span>
             <span class="browser-dot dot-min" aria-hidden="true"></span>
             <span class="browser-dot dot-max" aria-hidden="true"></span>
-            <span data-i18n="proj.professional" class="ml-2 text-[11px] font-mono text-slate-500 truncate">Professional
-              project</span>
+            <span class="ml-2 text-[11px] font-mono text-slate-500 truncate">Fintech</span>
           </div>
 
-          <div
-            class="relative aspect-[16/7] bg-[#0f121a] overflow-hidden border-b border-white/5 flex items-center justify-center p-6">
-            <div
-              class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
-              <div class="flex items-center justify-between">
-                <span data-i18n="proj.intrapay.tag" class="text-xs font-mono font-semibold text-white/70">Digital
-                  bank</span>
-                <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
-              </div>
-              <div class="text-center">
-                <span class="text-3xl font-bold font-heading text-white">IntraPay</span>
-              </div>
-              <div class="flex gap-2">
-                <div class="h-2 w-1/2 bg-white/20 rounded"></div>
-                <div class="h-2 w-1/2 bg-white/10 rounded"></div>
-              </div>
-            </div>
-          </div>
+          <button type="button" tabindex="-1" aria-hidden="true" data-open-project="proj-intrapay"
+            class="block w-full aspect-[16/8] bg-[#0f121a] overflow-hidden border-b border-white/5 cursor-pointer">
+            <span class="flex h-full items-start justify-center gap-3 px-6 pt-6">
+              <img src="assets/img/projects/intrapay/app-login.png" alt="" width="430" height="862" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/intrapay/app-home.png" alt="" width="430" height="862" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/intrapay/app-transfer.png" alt="" width="430" height="862" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+            </span>
+          </button>
 
           <div class="p-6 flex-1 flex flex-col gap-5">
             <div>
               <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-                <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
-                  IntraPay
-                </h3>
+                <h3 id="proj-intrapay-title" class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">IntraPay</h3>
                 <span
-                  class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider border border-green-400/40 text-green-400 bg-green-400/10">Fullstack
-                  / Software Architect</span>
+                  class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider border border-green-400/40 text-green-400 bg-green-400/10">Fullstack</span>
               </div>
-              <p data-i18n="proj.intrapay.d" class="text-slate-400 text-sm leading-relaxed">
-                Digital bank built with a mobile-first approach, scalable architecture and a focus on security, quality
-                and user experience.
-              </p>
+              <p data-i18n="proj.intrapay.d" class="text-slate-400 text-sm leading-relaxed">Fintech app and website for PIX and other payment transactions. Elevated security on every user input.</p>
             </div>
 
-            <dl class="space-y-4 text-sm">
-              <div>
-                <dt class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</dt>
-                <dd class="flex flex-wrap gap-2">
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React
-                    Native</span>
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NestJS</span>
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#/.NET</span>
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Firebase</span>
-                </dd>
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NestJS</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Zustand</span>
               </div>
-              <div>
-                <dt data-i18n="common.architecture"
-                  class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Architecture</dt>
-                <dd class="flex flex-wrap gap-2">
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Clean
-                    Architecture</span>
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SOLID</span>
-                </dd>
-              </div>
-              <div>
-                <dt class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Backend</dt>
-                <dd data-i18n="proj.backendNote" class="text-slate-300">C#/.NET organized in four responsibility layers
-                  by the team.</dd>
-              </div>
-            </dl>
+            </div>
 
-            <details class="project-details mt-auto pt-4 border-t border-white/5">
-              <summary
-                class="flex items-center justify-between cursor-pointer list-none text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
-                <span data-i18n="proj.hl12">Highlights (12)</span>
-                <svg class="details-chevron transition-transform duration-200" xmlns="http://www.w3.org/2000/svg"
-                  width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
-                  aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <ul class="mt-4 space-y-2.5">
+            <button type="button" data-open-project="proj-intrapay" aria-haspopup="dialog"
+              aria-labelledby="proj-intrapay-btn proj-intrapay-title"
+              class="mt-auto pt-4 border-t border-white/5 flex items-center justify-between w-full text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
+              <span id="proj-intrapay-btn" data-i18n="proj.details">View details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+        </article>
+
+        <!-- Project: Growzone -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-2"
+          data-category="mobile web">
+
+          <div class="browser-header">
+            <span class="browser-dot dot-close" aria-hidden="true"></span>
+            <span class="browser-dot dot-min" aria-hidden="true"></span>
+            <span class="browser-dot dot-max" aria-hidden="true"></span>
+            <span data-i18n="proj.type.social" class="ml-2 text-[11px] font-mono text-slate-500 truncate">Social Network</span>
+          </div>
+
+          <button type="button" tabindex="-1" aria-hidden="true" data-open-project="proj-growzone"
+            class="block w-full aspect-[16/8] bg-[#0f121a] overflow-hidden border-b border-white/5 cursor-pointer">
+            <span class="flex h-full items-start justify-center gap-3 px-6 pt-6">
+              <img src="assets/img/projects/growzone/screen-01.webp" alt="" width="900" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/growzone/screen-02.webp" alt="" width="900" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/growzone/screen-03.webp" alt="" width="900" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+            </span>
+          </button>
+
+          <div class="p-6 flex-1 flex flex-col gap-5">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <h3 id="proj-growzone-title" class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">Growzone</h3>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider border border-green-400/40 text-green-400 bg-green-400/10">Fullstack / Software Architect</span>
+              </div>
+              <p data-i18n="proj.growzone.d" class="text-slate-400 text-sm leading-relaxed">Cannabis-focused social network app where users interact with each other through chat and posts.</p>
+            </div>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Python</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Vite</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Zustand</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SocketIO</span>
+              </div>
+            </div>
+
+            <button type="button" data-open-project="proj-growzone" aria-haspopup="dialog"
+              aria-labelledby="proj-growzone-btn proj-growzone-title"
+              class="mt-auto pt-4 border-t border-white/5 flex items-center justify-between w-full text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
+              <span id="proj-growzone-btn" data-i18n="proj.details">View details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+        </article>
+
+        <!-- Project: BeXpenso -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-2"
+          data-category="mobile">
+
+          <div class="browser-header">
+            <span class="browser-dot dot-close" aria-hidden="true"></span>
+            <span class="browser-dot dot-min" aria-hidden="true"></span>
+            <span class="browser-dot dot-max" aria-hidden="true"></span>
+            <span data-i18n="proj.type.expenses" class="ml-2 text-[11px] font-mono text-slate-500 truncate">Expense Management</span>
+          </div>
+
+          <button type="button" tabindex="-1" aria-hidden="true" data-open-project="proj-bexpenso"
+            class="block w-full aspect-[16/8] bg-[#0f121a] overflow-hidden border-b border-white/5 cursor-pointer">
+            <span class="flex h-full items-start justify-center gap-3 px-6 pt-6">
+              <img src="assets/img/projects/bexpenso/screen-01.jpg" alt="" width="738" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/bexpenso/screen-02.jpg" alt="" width="738" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/bexpenso/screen-03.jpg" alt="" width="738" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+            </span>
+          </button>
+
+          <div class="p-6 flex-1 flex flex-col gap-5">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <h3 id="proj-bexpenso-title" class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">BeXpenso</h3>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider border border-green-400/40 text-green-400 bg-green-400/10">Fullstack / Software Architect</span>
+              </div>
+              <p data-i18n="proj.bexpenso.d" class="text-slate-400 text-sm leading-relaxed">App for employee expense reporting. Users request advances, log expenses and run period closings.</p>
+            </div>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Zustand</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">GPT</span>
+              </div>
+            </div>
+
+            <button type="button" data-open-project="proj-bexpenso" aria-haspopup="dialog"
+              aria-labelledby="proj-bexpenso-btn proj-bexpenso-title"
+              class="mt-auto pt-4 border-t border-white/5 flex items-center justify-between w-full text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
+              <span id="proj-bexpenso-btn" data-i18n="proj.details">View details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+        </article>
+
+        <!-- Project: ERP Suporte -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-3"
+          data-category="mobile erp">
+
+          <div class="browser-header">
+            <span class="browser-dot dot-close" aria-hidden="true"></span>
+            <span class="browser-dot dot-min" aria-hidden="true"></span>
+            <span class="browser-dot dot-max" aria-hidden="true"></span>
+            <span class="ml-2 text-[11px] font-mono text-slate-500 truncate">ERP</span>
+          </div>
+
+          <button type="button" tabindex="-1" aria-hidden="true" data-open-project="proj-erp"
+            class="block w-full aspect-[16/8] bg-[#0f121a] overflow-hidden border-b border-white/5 cursor-pointer">
+            <span class="flex h-full items-start justify-center gap-3 px-6 pt-6">
+              <img src="assets/img/projects/erp-suporte/screen-01.jpg" alt="" width="738" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/erp-suporte/screen-02.jpg" alt="" width="738" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/erp-suporte/screen-03.jpg" alt="" width="738" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+            </span>
+          </button>
+
+          <div class="p-6 flex-1 flex flex-col gap-5">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <h3 id="proj-erp-title" class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">ERP Suporte</h3>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider border border-green-400/40 text-green-400 bg-green-400/10">Fullstack</span>
+              </div>
+              <p data-i18n="proj.erp.d" class="text-slate-400 text-sm leading-relaxed">App integrated with the Benner ERP, used by the employees of the companies that hire the service. It covers 15 ERP modules and runs all the business rules.</p>
+            </div>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Firebase</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SQLite</span>
+              </div>
+            </div>
+
+            <button type="button" data-open-project="proj-erp" aria-haspopup="dialog"
+              aria-labelledby="proj-erp-btn proj-erp-title"
+              class="mt-auto pt-4 border-t border-white/5 flex items-center justify-between w-full text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
+              <span id="proj-erp-btn" data-i18n="proj.details">View details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+        </article>
+
+        <!-- Project: BVendas -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-3"
+          data-category="mobile ecommerce">
+
+          <div class="browser-header">
+            <span class="browser-dot dot-close" aria-hidden="true"></span>
+            <span class="browser-dot dot-min" aria-hidden="true"></span>
+            <span class="browser-dot dot-max" aria-hidden="true"></span>
+            <span class="ml-2 text-[11px] font-mono text-slate-500 truncate">E-commerce</span>
+          </div>
+
+          <button type="button" tabindex="-1" aria-hidden="true" data-open-project="proj-bvendas"
+            class="block w-full aspect-[16/8] bg-[#0f121a] overflow-hidden border-b border-white/5 cursor-pointer">
+            <span class="flex h-full items-start justify-center gap-3 px-6 pt-6">
+              <img src="assets/img/projects/bvendas/screen-01.jpg" alt="" width="738" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/bvendas/screen-02.jpg" alt="" width="738" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/bvendas/screen-03.jpg" alt="" width="738" height="1600" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+            </span>
+          </button>
+
+          <div class="p-6 flex-1 flex flex-col gap-5">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <h3 id="proj-bvendas-title" class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">BVendas</h3>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider border border-green-400/40 text-green-400 bg-green-400/10">Fullstack / Software Architect</span>
+              </div>
+              <p data-i18n="proj.bvendas.d" class="text-slate-400 text-sm leading-relaxed">Purchasing app with a guest mode. Card data traveled encrypted and only the card ID was stored.</p>
+            </div>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Redux</span>
+              </div>
+            </div>
+
+            <button type="button" data-open-project="proj-bvendas" aria-haspopup="dialog"
+              aria-labelledby="proj-bvendas-btn proj-bvendas-title"
+              class="mt-auto pt-4 border-t border-white/5 flex items-center justify-between w-full text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
+              <span id="proj-bvendas-btn" data-i18n="proj.details">View details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+        </article>
+
+        <!-- Project: HelpGuincho -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-3"
+          data-category="mobile web">
+
+          <div class="browser-header">
+            <span class="browser-dot dot-close" aria-hidden="true"></span>
+            <span class="browser-dot dot-min" aria-hidden="true"></span>
+            <span class="browser-dot dot-max" aria-hidden="true"></span>
+            <span data-i18n="proj.type.ondemand" class="ml-2 text-[11px] font-mono text-slate-500 truncate">On-demand Service</span>
+          </div>
+
+          <button type="button" tabindex="-1" aria-hidden="true" data-open-project="proj-help"
+            class="block w-full aspect-[16/8] bg-[#0f121a] overflow-hidden border-b border-white/5 cursor-pointer">
+            <span class="flex h-full items-start justify-center gap-3 px-6 pt-6">
+              <img src="assets/img/projects/helpguincho/home.png" alt="" width="440" height="956" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/helpguincho/solicitacao.png" alt="" width="439" height="958" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+              <img src="assets/img/projects/helpguincho/historico.png" alt="" width="438" height="952" loading="lazy"
+              class="shrink-0 w-1/3 max-w-[8.5rem] rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+            </span>
+          </button>
+
+          <div class="p-6 flex-1 flex flex-col gap-5">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <h3 id="proj-help-title" class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">HelpGuincho</h3>
+              </div>
+              <p data-i18n="proj.help.d" class="text-slate-400 text-sm leading-relaxed">Service app paired with a website. Users book a tow truck, the driver gets notified with all the details of the vehicle, the route and more, and the user follows the truck moving in real time.</p>
+            </div>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NestJS</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Zustand</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Google Maps</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SocketIO</span>
+              </div>
+            </div>
+
+            <button type="button" data-open-project="proj-help" aria-haspopup="dialog"
+              aria-labelledby="proj-help-btn proj-help-title"
+              class="mt-auto pt-4 border-t border-white/5 flex items-center justify-between w-full text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
+              <span id="proj-help-btn" data-i18n="proj.details">View details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+        </article>
+
+        <!-- Project: Mercosistem -->
+        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-3"
+          data-category="web erp">
+
+          <div class="browser-header">
+            <span class="browser-dot dot-close" aria-hidden="true"></span>
+            <span class="browser-dot dot-min" aria-hidden="true"></span>
+            <span class="browser-dot dot-max" aria-hidden="true"></span>
+            <span class="ml-2 text-[11px] font-mono text-slate-500 truncate">ERP</span>
+          </div>
+
+          <button type="button" tabindex="-1" aria-hidden="true" data-open-project="proj-merco"
+            class="block w-full aspect-[16/8] bg-[#0f121a] overflow-hidden border-b border-white/5 cursor-pointer">
+            <span class="flex h-full items-start justify-center gap-3 px-6 pt-6">
+              <img src="assets/img/projects/merco/dash.png" alt="" width="1440" height="1418" loading="lazy"
+              class="shrink-0 w-[88%] max-w-none rounded-t-xl border border-b-0 border-white/10 group-hover:-translate-y-1 transition-transform duration-500">
+            </span>
+          </button>
+
+          <div class="p-6 flex-1 flex flex-col gap-5">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
+                <h3 id="proj-merco-title" class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">Mercosistem</h3>
+              </div>
+              <p data-i18n="proj.merco.d" class="text-slate-400 text-sm leading-relaxed">Web ERP with multiple modules for companies, including PDF generation for download.</p>
+            </div>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Material UI</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Jotai</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SSR</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React PDF</span>
+              </div>
+            </div>
+
+            <button type="button" data-open-project="proj-merco" aria-haspopup="dialog"
+              aria-labelledby="proj-merco-btn proj-merco-title"
+              class="mt-auto pt-4 border-t border-white/5 flex items-center justify-between w-full text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
+              <span id="proj-merco-btn" data-i18n="proj.details">View details</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+
+        </article>
+
+      </div>
+
+      <dialog id="proj-intrapay" class="project-dialog" aria-labelledby="proj-intrapay-dtitle">
+        <div class="flex flex-col max-h-[90vh]">
+          <div class="flex items-start justify-between gap-4 p-5 sm:p-6 border-b border-white/10">
+            <div class="flex items-center gap-4 min-w-0">
+              <div class="min-w-0">
+                <h3 id="proj-intrapay-dtitle" class="text-2xl font-bold font-heading text-white">IntraPay</h3>
+                <p class="text-[11px] font-mono text-slate-500 mt-0.5"><span>Fintech</span> · Fullstack</p>
+              </div>
+            </div>
+            <button type="button" data-close-project data-i18n-attr="aria-label:aria.closeProject"
+              aria-label="Close project details"
+              class="shrink-0 p-2 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="overflow-y-auto p-5 sm:p-6 space-y-6">
+            <p data-i18n="proj.intrapay.d" class="text-slate-300 text-sm sm:text-base leading-relaxed">Fintech app and website for PIX and other payment transactions. Elevated security on every user input.</p>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NestJS</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Zustand</span>
+              </div>
+            </div>
+
+            <div>
+              <p data-i18n="common.architecture" class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Architecture</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Clean Architecture</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SOLID</span>
+              </div>
+            </div>
+
+            <div>
+              <p data-i18n="proj.hl12" class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Highlights (12)</p>
+              <ul class="space-y-2.5">
                 <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
                   <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
                   <span data-i18n="proj.intrapay.h1">Involved from the first conversation with the client through to
@@ -749,89 +1101,72 @@
                   <span data-i18n="proj.intrapay.h12">Unit, integration and E2E tests, also run in CI.</span>
                 </li>
               </ul>
-            </details>
-          </div>
-
-        </article>
-
-        <!-- Project: Growzone (professional) -->
-        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-3"
-          data-category="mobile web">
-
-          <div class="browser-header">
-            <span class="browser-dot dot-close" aria-hidden="true"></span>
-            <span class="browser-dot dot-min" aria-hidden="true"></span>
-            <span class="browser-dot dot-max" aria-hidden="true"></span>
-            <span data-i18n="proj.professional" class="ml-2 text-[11px] font-mono text-slate-500 truncate">Professional
-              project</span>
-          </div>
-
-          <div
-            class="relative aspect-[16/7] bg-[#0f121a] overflow-hidden border-b border-white/5 flex items-center justify-center p-6">
-            <div
-              class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
-              <div class="flex items-center justify-between">
-                <span data-i18n="proj.growzone.tag" class="text-xs font-mono font-semibold text-white/70">Application
-                  modernization</span>
-                <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
-              </div>
-              <div class="text-center">
-                <span class="text-3xl font-bold font-heading text-white">Growzone</span>
-              </div>
-              <div class="flex gap-2">
-                <div class="h-2 w-1/2 bg-white/20 rounded"></div>
-                <div class="h-2 w-1/2 bg-white/10 rounded"></div>
-              </div>
             </div>
-          </div>
 
-          <div class="p-6 flex-1 flex flex-col gap-5">
             <div>
-              <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-                <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
-                  Growzone
-                </h3>
-                <span
-                  class="px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold uppercase tracking-wider border border-green-400/40 text-green-400 bg-green-400/10">Fullstack
-                  / Software Architect</span>
+              <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3" tabindex="0" role="region"
+                data-i18n-attr="aria-label:aria.screens" aria-label="Screenshots">
+                <img src="assets/img/projects/intrapay/app-login.png" alt="IntraPay screenshot 1" width="430" height="862" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/intrapay/app-home.png" alt="IntraPay screenshot 2" width="430" height="862" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/intrapay/app-transfer.png" alt="IntraPay screenshot 3" width="430" height="862" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/intrapay/app-doc.png" alt="IntraPay screenshot 4" width="430" height="862" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/intrapay/web-login.png" alt="IntraPay screenshot 5" width="1920" height="950" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[22rem] w-[34rem] max-w-[85vw] object-cover object-top">
+                <img src="assets/img/projects/intrapay/web-home.png" alt="IntraPay screenshot 6" width="1440" height="1899" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[22rem] w-[34rem] max-w-[85vw] object-cover object-top">
+                <img src="assets/img/projects/intrapay/web-transfer.png" alt="IntraPay screenshot 7" width="1440" height="950" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[22rem] w-[34rem] max-w-[85vw] object-cover object-top">
+                <img src="assets/img/projects/intrapay/web-doc.png" alt="IntraPay screenshot 8" width="1920" height="1326" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[22rem] w-[34rem] max-w-[85vw] object-cover object-top">
               </div>
-              <p data-i18n="proj.growzone.d" class="text-slate-400 text-sm leading-relaxed">
-                Evolution and restructuring of an existing application, focused on modernization, architectural
-                organization, reliability and continuity of development.
-              </p>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog id="proj-growzone" class="project-dialog" aria-labelledby="proj-growzone-dtitle">
+        <div class="flex flex-col max-h-[90vh]">
+          <div class="flex items-start justify-between gap-4 p-5 sm:p-6 border-b border-white/10">
+            <div class="flex items-center gap-4 min-w-0">
+              <img src="assets/img/projects/growzone/icon.png" alt="" width="40" height="40" loading="lazy" class="h-10 w-auto rounded-lg shrink-0">
+              <div class="min-w-0">
+                <h3 id="proj-growzone-dtitle" class="text-2xl font-bold font-heading text-white">Growzone</h3>
+                <p class="text-[11px] font-mono text-slate-500 mt-0.5"><span data-i18n="proj.type.social">Social Network</span> · Fullstack / Software Architect</p>
+              </div>
+            </div>
+            <button type="button" data-close-project data-i18n-attr="aria-label:aria.closeProject"
+              aria-label="Close project details"
+              class="shrink-0 p-2 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="overflow-y-auto p-5 sm:p-6 space-y-6">
+            <p data-i18n="proj.growzone.d" class="text-slate-300 text-sm sm:text-base leading-relaxed">Cannabis-focused social network app where users interact with each other through chat and posts.</p>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Python</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Vite</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Zustand</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SocketIO</span>
+              </div>
             </div>
 
-            <dl class="space-y-4 text-sm">
-              <div>
-                <dt class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Stack</dt>
-                <dd class="flex flex-wrap gap-2">
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React
-                    Native</span>
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
-                  <span
-                    class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#/.NET</span>
-                </dd>
-              </div>
-              <div>
-                <dt class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-1.5">Backend</dt>
-                <dd data-i18n="proj.backendNote" class="text-slate-300">C#/.NET organized in four responsibility layers
-                  by the team.</dd>
-              </div>
-            </dl>
-
-            <details class="project-details mt-auto pt-4 border-t border-white/5">
-              <summary
-                class="flex items-center justify-between cursor-pointer list-none text-xs font-mono font-semibold uppercase tracking-wider text-slate-300 hover:text-white transition-colors rounded focus-visible:ring-2 focus-visible:ring-green-400">
-                <span data-i18n="proj.hl7">Highlights (7)</span>
-                <svg class="details-chevron transition-transform duration-200" xmlns="http://www.w3.org/2000/svg"
-                  width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"
-                  aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <ul class="mt-4 space-y-2.5">
+            <div>
+              <p data-i18n="proj.hl7" class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Highlights (7)</p>
+              <ul class="space-y-2.5">
                 <li class="flex gap-3 text-sm text-slate-400 leading-relaxed">
                   <span class="mt-2 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" aria-hidden="true"></span>
                   <span data-i18n="proj.growzone.h1">Refactoring of an old, disorganized codebase.</span>
@@ -864,265 +1199,309 @@
                     solution together with product.</span>
                 </li>
               </ul>
-            </details>
-          </div>
-
-        </article>
-
-        <!-- Project: Home Book -->
-        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-2"
-          data-category="elearning webapp">
-
-          <!-- Browser Mockup Bar -->
-          <div class="browser-header">
-            <span class="browser-dot dot-close" aria-hidden="true"></span>
-            <span class="browser-dot dot-min" aria-hidden="true"></span>
-            <span class="browser-dot dot-max" aria-hidden="true"></span>
-            <span class="ml-2 text-[11px] font-mono text-slate-500 truncate">elearning-yt.vercel.app</span>
-          </div>
-
-          <!-- Preview Visual Container -->
-          <div
-            class="relative aspect-[16/10] bg-[#0f121a] overflow-hidden border-b border-white/5 flex items-center justify-center p-6 group-hover:bg-[#131622] transition-colors">
-
-            <div
-              class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
-              <div class="flex items-center justify-between">
-                <span data-i18n="proj.elearning.tag" class="text-xs font-mono font-semibold text-white/70">E-Learning
-                  Platform</span>
-                <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
-              </div>
-              <div class="text-center">
-                <span class="text-2xl font-bold font-heading text-white">Home Book</span>
-                <p data-i18n="proj.elearning.sub" class="text-xs text-slate-400 mt-1">Interactive Education Ecosystem
-                </p>
-              </div>
-              <div class="flex gap-2">
-                <div class="h-2 w-1/3 bg-white/20 rounded"></div>
-                <div class="h-2 w-2/3 bg-white/10 rounded"></div>
-              </div>
             </div>
 
-            <!-- Hover Overlay with Demo CTA -->
-            <div
-              class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <a href="https://elearning-yt.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="btn-press min-h-[44px] px-6 py-2.5 rounded-full bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-transform flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-green-400">
-                <span data-i18n="proj.liveDemo">Live Demo</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-
-          </div>
-
-          <!-- Project Details -->
-          <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between gap-3 mb-2">
-                <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
-                  Home Book
-                </h3>
-                <a data-i18n-attr="aria-label:aria.demoHome" href="https://elearning-yt.vercel.app/" target="_blank"
-                  rel="noopener noreferrer" class="text-slate-400 hover:text-white p-1"
-                  aria-label="Open Home Book project demo">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-                  </svg>
-                </a>
+              <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3" tabindex="0" role="region"
+                data-i18n-attr="aria-label:aria.screens" aria-label="Screenshots">
+                <img src="assets/img/projects/growzone/screen-01.webp" alt="Growzone screenshot 1" width="900" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/growzone/screen-02.webp" alt="Growzone screenshot 2" width="900" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/growzone/screen-03.webp" alt="Growzone screenshot 3" width="900" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/growzone/screen-04.webp" alt="Growzone screenshot 4" width="900" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/growzone/screen-05.webp" alt="Growzone screenshot 5" width="1200" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/growzone/screen-06.webp" alt="Growzone screenshot 6" width="1200" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/growzone/screen-07.webp" alt="Growzone screenshot 7" width="1200" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
               </div>
-              <p data-i18n="proj.elearning.d" class="text-slate-400 text-sm leading-relaxed mb-6">
-                E-learning platform with online courses, a responsive interface and a focus on user experience.
-              </p>
-            </div>
-
-            <!-- Tech Badges -->
-            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
-              <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
-              <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
-              <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Tailwind
-                CSS</span>
             </div>
           </div>
+        </div>
+      </dialog>
 
-        </article>
-
-        <!-- Project: BurgerBite -->
-        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-2"
-          data-category="ecommerce web">
-
-          <!-- Browser Mockup Bar -->
-          <div class="browser-header">
-            <span class="browser-dot dot-close" aria-hidden="true"></span>
-            <span class="browser-dot dot-min" aria-hidden="true"></span>
-            <span class="browser-dot dot-max" aria-hidden="true"></span>
-            <span class="ml-2 text-[11px] font-mono text-slate-500 truncate">burger-pearl.vercel.app</span>
-          </div>
-
-          <!-- Preview Visual Container -->
-          <div
-            class="relative aspect-[16/10] bg-[#0f121a] overflow-hidden border-b border-white/5 flex items-center justify-center p-6 group-hover:bg-[#131622] transition-colors">
-
-            <div
-              class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
-              <div class="flex items-center justify-between">
-                <span data-i18n="proj.burger.tag" class="text-xs font-mono font-semibold text-white/70">Restaurant &amp;
-                  Delivery</span>
-                <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
-              </div>
-              <div class="text-center">
-                <span class="text-2xl font-bold font-heading text-white">BurgerBite</span>
-                <p data-i18n="proj.burger.sub" class="text-xs text-slate-400 mt-1">High-Conversion Gastronomy Site</p>
-              </div>
-              <div class="flex gap-2">
-                <div class="h-2 w-1/2 bg-white/20 rounded"></div>
-                <div class="h-2 w-1/2 bg-white/10 rounded"></div>
+      <dialog id="proj-bexpenso" class="project-dialog" aria-labelledby="proj-bexpenso-dtitle">
+        <div class="flex flex-col max-h-[90vh]">
+          <div class="flex items-start justify-between gap-4 p-5 sm:p-6 border-b border-white/10">
+            <div class="flex items-center gap-4 min-w-0">
+              <img src="assets/img/projects/bexpenso/icon.png" alt="" width="40" height="40" loading="lazy" class="h-10 w-auto rounded-lg shrink-0">
+              <div class="min-w-0">
+                <h3 id="proj-bexpenso-dtitle" class="text-2xl font-bold font-heading text-white">BeXpenso</h3>
+                <p class="text-[11px] font-mono text-slate-500 mt-0.5"><span data-i18n="proj.type.expenses">Expense Management</span> · Fullstack / Software Architect</p>
               </div>
             </div>
-
-            <!-- Hover Overlay with Demo CTA -->
-            <div
-              class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <a href="https://burger-pearl.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="btn-press min-h-[44px] px-6 py-2.5 rounded-full bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-transform flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-green-400">
-                <span data-i18n="proj.liveDemo">Live Demo</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-
+            <button type="button" data-close-project data-i18n-attr="aria-label:aria.closeProject"
+              aria-label="Close project details"
+              class="shrink-0 p-2 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
           </div>
 
-          <!-- Project Details -->
-          <div class="p-6 flex-1 flex flex-col justify-between">
+          <div class="overflow-y-auto p-5 sm:p-6 space-y-6">
+            <p data-i18n="proj.bexpenso.d" class="text-slate-300 text-sm sm:text-base leading-relaxed">App for employee expense reporting. Users request advances, log expenses and run period closings.</p>
+
             <div>
-              <div class="flex items-center justify-between gap-3 mb-2">
-                <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
-                  BurgerBite
-                </h3>
-                <a data-i18n-attr="aria-label:aria.demoBurger" href="https://burger-pearl.vercel.app/" target="_blank"
-                  rel="noopener noreferrer" class="text-slate-400 hover:text-white p-1"
-                  aria-label="Open BurgerBite demo">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-                  </svg>
-                </a>
-              </div>
-              <p data-i18n="proj.burger.d" class="text-slate-400 text-sm leading-relaxed mb-6">
-                Responsive restaurant website with an interactive menu, product showcase and an intuitive navigation
-                flow.
-              </p>
-            </div>
-
-            <!-- Tech Badges -->
-            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
-              <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React</span>
-              <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
-              <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">CSS
-                Modules</span>
-            </div>
-          </div>
-
-        </article>
-
-        <!-- Project: InVestor -->
-        <article class="project-item bento-card group flex flex-col h-full fade-in-up lg:col-span-2"
-          data-category="fintech webapp">
-
-          <!-- Browser Mockup Bar -->
-          <div class="browser-header">
-            <span class="browser-dot dot-close" aria-hidden="true"></span>
-            <span class="browser-dot dot-min" aria-hidden="true"></span>
-            <span class="browser-dot dot-max" aria-hidden="true"></span>
-            <span class="ml-2 text-[11px] font-mono text-slate-500 truncate">invest-peach.vercel.app</span>
-          </div>
-
-          <!-- Preview Visual Container -->
-          <div
-            class="relative aspect-[16/10] bg-[#0f121a] overflow-hidden border-b border-white/5 flex items-center justify-center p-6 group-hover:bg-[#131622] transition-colors">
-
-            <div
-              class="w-full h-full rounded-2xl bg-gradient-to-br from-white/[0.06] via-[#0a0d14] to-white/[0.02] border border-white/10 p-5 flex flex-col justify-between group-hover:scale-[1.02] transition-transform duration-500">
-              <div class="flex items-center justify-between">
-                <span data-i18n="proj.invest.tag" class="text-xs font-mono font-semibold text-white/70">FinTech
-                  Platform</span>
-                <span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span>
-              </div>
-              <div class="text-center">
-                <span class="text-2xl font-bold font-heading text-white">InVestor</span>
-                <p data-i18n="proj.invest.sub" class="text-xs text-slate-400 mt-1">Asset Analytics Dashboard</p>
-              </div>
-              <div class="flex gap-2">
-                <div class="h-2 w-2/3 bg-white/20 rounded"></div>
-                <div class="h-2 w-1/3 bg-white/10 rounded"></div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Zustand</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">GPT</span>
               </div>
             </div>
 
-            <!-- Hover Overlay with Demo CTA -->
-            <div
-              class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <a href="https://invest-peach.vercel.app/" target="_blank" rel="noopener noreferrer"
-                class="btn-press min-h-[44px] px-6 py-2.5 rounded-full bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-transform flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-green-400">
-                <span data-i18n="proj.liveDemo">Live Demo</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
-
-          </div>
-
-          <!-- Project Details -->
-          <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between gap-3 mb-2">
-                <h3 class="text-xl font-bold font-heading text-white group-hover:text-green-400 transition-colors">
-                  InVestor
-                </h3>
-                <a data-i18n-attr="aria-label:aria.demoInvest" href="https://invest-peach.vercel.app/" target="_blank"
-                  rel="noopener noreferrer" class="text-slate-400 hover:text-white p-1" aria-label="Open InVestor demo">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17" />
-                  </svg>
-                </a>
+              <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3" tabindex="0" role="region"
+                data-i18n-attr="aria-label:aria.screens" aria-label="Screenshots">
+                <img src="assets/img/projects/bexpenso/screen-01.jpg" alt="BeXpenso screenshot 1" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bexpenso/screen-02.jpg" alt="BeXpenso screenshot 2" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bexpenso/screen-03.jpg" alt="BeXpenso screenshot 3" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bexpenso/screen-04.jpg" alt="BeXpenso screenshot 4" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bexpenso/screen-05.jpg" alt="BeXpenso screenshot 5" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bexpenso/screen-06.jpg" alt="BeXpenso screenshot 6" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bexpenso/screen-07.jpg" alt="BeXpenso screenshot 7" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bexpenso/screen-08.jpg" alt="BeXpenso screenshot 8" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
               </div>
-              <p data-i18n="proj.invest.d" class="text-slate-400 text-sm leading-relaxed mb-6">
-                Financial dashboard for tracking assets and portfolio metrics, with data visualization and a responsive
-                interface.
-              </p>
-            </div>
-
-            <!-- Tech Badges -->
-            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
-              <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
-              <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
-              <span
-                class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">ChartJS</span>
             </div>
           </div>
+        </div>
+      </dialog>
 
-        </article>
+      <dialog id="proj-erp" class="project-dialog" aria-labelledby="proj-erp-dtitle">
+        <div class="flex flex-col max-h-[90vh]">
+          <div class="flex items-start justify-between gap-4 p-5 sm:p-6 border-b border-white/10">
+            <div class="flex items-center gap-4 min-w-0">
+              <img src="assets/img/projects/erp-suporte/icon.png" alt="" width="40" height="40" loading="lazy" class="h-10 w-auto rounded-lg shrink-0">
+              <div class="min-w-0">
+                <h3 id="proj-erp-dtitle" class="text-2xl font-bold font-heading text-white">ERP Suporte</h3>
+                <p class="text-[11px] font-mono text-slate-500 mt-0.5"><span>ERP</span> · Fullstack</p>
+              </div>
+            </div>
+            <button type="button" data-close-project data-i18n-attr="aria-label:aria.closeProject"
+              aria-label="Close project details"
+              class="shrink-0 p-2 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
 
-      </div>
+          <div class="overflow-y-auto p-5 sm:p-6 space-y-6">
+            <p data-i18n="proj.erp.d" class="text-slate-300 text-sm sm:text-base leading-relaxed">App integrated with the Benner ERP, used by the employees of the companies that hire the service. It covers 15 ERP modules and runs all the business rules.</p>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Firebase</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SQLite</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3" tabindex="0" role="region"
+                data-i18n-attr="aria-label:aria.screens" aria-label="Screenshots">
+                <img src="assets/img/projects/erp-suporte/screen-01.jpg" alt="ERP Suporte screenshot 1" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/erp-suporte/screen-02.jpg" alt="ERP Suporte screenshot 2" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/erp-suporte/screen-03.jpg" alt="ERP Suporte screenshot 3" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/erp-suporte/screen-04.jpg" alt="ERP Suporte screenshot 4" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/erp-suporte/screen-05.jpg" alt="ERP Suporte screenshot 5" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/erp-suporte/screen-06.jpg" alt="ERP Suporte screenshot 6" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/erp-suporte/screen-07.jpg" alt="ERP Suporte screenshot 7" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/erp-suporte/screen-08.jpg" alt="ERP Suporte screenshot 8" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog id="proj-bvendas" class="project-dialog" aria-labelledby="proj-bvendas-dtitle">
+        <div class="flex flex-col max-h-[90vh]">
+          <div class="flex items-start justify-between gap-4 p-5 sm:p-6 border-b border-white/10">
+            <div class="flex items-center gap-4 min-w-0">
+              <img src="assets/img/projects/bvendas/icon.png" alt="" width="40" height="40" loading="lazy" class="h-10 w-auto rounded-lg shrink-0">
+              <div class="min-w-0">
+                <h3 id="proj-bvendas-dtitle" class="text-2xl font-bold font-heading text-white">BVendas</h3>
+                <p class="text-[11px] font-mono text-slate-500 mt-0.5"><span>E-commerce</span> · Fullstack / Software Architect</p>
+              </div>
+            </div>
+            <button type="button" data-close-project data-i18n-attr="aria-label:aria.closeProject"
+              aria-label="Close project details"
+              class="shrink-0 p-2 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="overflow-y-auto p-5 sm:p-6 space-y-6">
+            <p data-i18n="proj.bvendas.d" class="text-slate-300 text-sm sm:text-base leading-relaxed">Purchasing app with a guest mode. Card data traveled encrypted and only the card ID was stored.</p>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">C#</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Redux</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3" tabindex="0" role="region"
+                data-i18n-attr="aria-label:aria.screens" aria-label="Screenshots">
+                <img src="assets/img/projects/bvendas/screen-01.jpg" alt="BVendas screenshot 1" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bvendas/screen-02.jpg" alt="BVendas screenshot 2" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bvendas/screen-03.jpg" alt="BVendas screenshot 3" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bvendas/screen-04.jpg" alt="BVendas screenshot 4" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bvendas/screen-05.jpg" alt="BVendas screenshot 5" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bvendas/screen-06.jpg" alt="BVendas screenshot 6" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bvendas/screen-07.jpg" alt="BVendas screenshot 7" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/bvendas/screen-08.jpg" alt="BVendas screenshot 8" width="738" height="1600" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog id="proj-help" class="project-dialog" aria-labelledby="proj-help-dtitle">
+        <div class="flex flex-col max-h-[90vh]">
+          <div class="flex items-start justify-between gap-4 p-5 sm:p-6 border-b border-white/10">
+            <div class="flex items-center gap-4 min-w-0">
+              <img src="assets/img/projects/helpguincho/icon.png" alt="" width="40" height="40" loading="lazy" class="h-10 w-auto rounded-lg shrink-0">
+              <div class="min-w-0">
+                <h3 id="proj-help-dtitle" class="text-2xl font-bold font-heading text-white">HelpGuincho</h3>
+                <p class="text-[11px] font-mono text-slate-500 mt-0.5"><span data-i18n="proj.type.ondemand">On-demand Service</span></p>
+              </div>
+            </div>
+            <button type="button" data-close-project data-i18n-attr="aria-label:aria.closeProject"
+              aria-label="Close project details"
+              class="shrink-0 p-2 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="overflow-y-auto p-5 sm:p-6 space-y-6">
+            <p data-i18n="proj.help.d" class="text-slate-300 text-sm sm:text-base leading-relaxed">Service app paired with a website. Users book a tow truck, the driver gets notified with all the details of the vehicle, the route and more, and the user follows the truck moving in real time.</p>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React Native</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Expo</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NestJS</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">TypeScript</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Zustand</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Google Maps</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SocketIO</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3" tabindex="0" role="region"
+                data-i18n-attr="aria-label:aria.screens" aria-label="Screenshots">
+                <img src="assets/img/projects/helpguincho/home.png" alt="HelpGuincho screenshot 1" width="440" height="956" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/helpguincho/solicitacao.png" alt="HelpGuincho screenshot 2" width="439" height="958" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+                <img src="assets/img/projects/helpguincho/historico.png" alt="HelpGuincho screenshot 3" width="438" height="952" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[26rem] w-auto">
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog id="proj-merco" class="project-dialog" aria-labelledby="proj-merco-dtitle">
+        <div class="flex flex-col max-h-[90vh]">
+          <div class="flex items-start justify-between gap-4 p-5 sm:p-6 border-b border-white/10">
+            <div class="flex items-center gap-4 min-w-0">
+              <div class="min-w-0">
+                <h3 id="proj-merco-dtitle" class="text-2xl font-bold font-heading text-white">Mercosistem</h3>
+                <p class="text-[11px] font-mono text-slate-500 mt-0.5"><span>ERP</span></p>
+              </div>
+            </div>
+            <button type="button" data-close-project data-i18n-attr="aria-label:aria.closeProject"
+              aria-label="Close project details"
+              class="shrink-0 p-2 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="overflow-y-auto p-5 sm:p-6 space-y-6">
+            <p data-i18n="proj.merco.d" class="text-slate-300 text-sm sm:text-base leading-relaxed">Web ERP with multiple modules for companies, including PDF generation for download.</p>
+
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2">Stack</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Material UI</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">NextJS</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">Jotai</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">SSR</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-white/5 text-slate-300 border border-white/10">React PDF</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3" tabindex="0" role="region"
+                data-i18n-attr="aria-label:aria.screens" aria-label="Screenshots">
+                <img src="assets/img/projects/merco/dash.png" alt="Mercosistem screenshot 1" width="1440" height="1418" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[22rem] w-[34rem] max-w-[85vw] object-cover object-top">
+                <img src="assets/img/projects/merco/nfs-listagem.png" alt="Mercosistem screenshot 2" width="1440" height="1879" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[22rem] w-[34rem] max-w-[85vw] object-cover object-top">
+                <img src="assets/img/projects/merco/pedidos-detalhes.png" alt="Mercosistem screenshot 3" width="1440" height="2476" loading="lazy"
+              class="snap-center shrink-0 rounded-xl border border-white/10 h-[22rem] w-[34rem] max-w-[85vw] object-cover object-top">
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
 
       <p data-i18n="proj.empty" id="projects-empty" class="hidden text-center text-sm text-slate-400 py-12"
         role="status">
@@ -1178,6 +1557,7 @@
             <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/expo/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Expo</span></span>
             <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="https://cdn.simpleicons.org/expo/white" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>Expo Router</span></span>
             <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="assets/img/react-navigation.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>React Navigation</span></span>
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-200 bg-white/[0.04] border border-white/10 hover:border-white/25 hover:bg-white/[0.07] transition-colors"><img src="assets/img/nativewind.svg" alt="" width="16" height="16" loading="lazy" class="w-4 h-4 shrink-0"><span>NativeWind</span></span>
           </div>
         </div>
 
@@ -1664,9 +2044,10 @@
 
       <a href="#home" data-i18n-attr="aria-label:aria.home" aria-label="Back to home"
         class="w-full rounded-2xl focus-visible:ring-2 focus-visible:ring-green-400">
-        <span
-          class="block font-sans font-extrabold tracking-tight leading-none whitespace-nowrap text-center text-[11vw] text-white select-none">Vinicius
+        <span id="footer-name-text"
+          class="block font-heading uppercase leading-none whitespace-nowrap text-center text-[14vw] text-white select-none">Vinicius
           Celestino</span>
+        <div id="footer-name-3d" class="w-full" hidden aria-hidden="true"></div>
       </a>
 
       <nav data-i18n-attr="aria-label:aria.footerNav" aria-label="Footer navigation">
@@ -1713,6 +2094,12 @@
   <!-- Core Scripts -->
   <script src="i18n.js"></script>
   <script src="script.js"></script>
+  <script type="importmap">
+    { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+    } }
+  </script>
+  <script type="module" src="footer-3d.js"></script>
 </body>
 
 </html>
